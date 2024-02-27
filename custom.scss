@@ -1,0 +1,28 @@
+$theme-colors: (
+  "red": #a81818,
+  "yellow": #cda232,
+  "black": #1f1e1e,
+  "white": #ffffff,
+  "grey": #f4f0f1,
+  "lightGrey": #b6b6b641,
+  "green": #108230,
+  "darkGrey": #1f1e1e,
+  "opBlack": #807d7d15,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1700px,
+);
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+);
+@import "~bootstrap/scss/bootstrap.scss";
