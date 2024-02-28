@@ -1,18 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.f16 {
+body{
+  background-color: #EDF0F3;
+
+}
+.f16{
   font-size: 16px;
 }
-.f18 {
-  font-size: 18px;
+.f32{
+  font-size: 32px;
 }
-.alignC {
+.f56{
+  font-size: 56px;
+}
+.dfr{
   display: flex;
+  align-items: center;
+ 
+}
+.jcsb{
+  justify-content: space-between;
+}
+.jcc{
   justify-content: center;
+}
+.aic{
   align-items: center;
 }
+ul{
+  margin: 0 ;
+  padding: 0 ;
+}
+a{
+  text-decoration: none !important;
+  color:#010632 !important;
+}
+li{
+  list-style: none;
+}
+.upCase{
+  text-transform: uppercase;
+}
+h1{
+  margin: 0 !important;
+}
+@import url(./layout/customBtn.css);
+@import url(./layout/navbar.css);
+@import url(./layout/footer.css);
+@import url(./layout/sponsors.css);
+@import url(./layout/infosection.css);
+@import url(./layout/hero_homepage.css);
+@import url(./layout/bluePageSeparator.css);
+@import url(./layout/stats.css);
 
-@import url(./layout/Layout.css);

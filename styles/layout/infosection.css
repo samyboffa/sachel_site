@@ -1,0 +1,36 @@
+.section_container{
+    height: auto;
+    width: 100%;
+    
+}
+.img_container{
+    overflow: visible;
+    height: auto;
+    width: 50%;
+}
+.section_img{
+    object-fit: contain;
+}
+.section_description{
+    width: 50%; 
+    padding-left: 10%;  
+}
+.section_title{
+    font-family: "Termina",sans-serif;
+    text-transform: uppercase;
+}
+.section_text{
+    font-family: "Manrope";
+    font-size: 16px;
+}
+.sectionBtn{
+    font-family: "Manrope";
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    height: 48px;
+    width: 159px;
+}
+.hidden{
+    display: none;
+}
