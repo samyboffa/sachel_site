@@ -1,35 +1,40 @@
 import CustomButton from "../commons/CustomButton";
 import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
-import { useState, React } from "react";
 
 
 const Header = () => {
-  const [btnToggle,setBtnToggle]=useState(false)
-  const toggleMenu=()=>{
-    setBtnToggle(!btnToggle)
-    console.log(btnToggle)
-  }
-  return  (
-    <div className='dfr jcsb nav_bar'>
-      <div className="container dfr jcsb">
-        <h1 className="logo dfr">Sachel rotge</h1>
-        <ul className="nav_list dfr">
-          <li className="nav_link"><Link href="/">acceuil</Link></li>
-          <li className="nav_link"><Link href="/equipe">l'équipe</Link></li>
-          <li className="nav_link" onClick={()=>toggleMenu()} >saisons<FontAwesomeIcon icon={faChevronDown} className='cheveron' /></li>
-          <li className="nav_link"><Link href="/sponsors">sponsors</Link></li>
-        </ul>
-        <ul className={btnToggle? "saison_menu aic jcc": " hide"}>
-           <Link href='/saison23' onClick={()=>toggleMenu()}  className='saison_link dfr aic jcc' >SAISON 2023</Link>
-            <Link href='/saison24' onClick={()=>toggleMenu()} className='saison_link dfr aic jcc'>SAISON 2024</Link>
+  
+  return(
+   
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container ">
+        <Link class="navbar-brand f24 fw-bold" href="/">Sachel Rotge</Link>
+        <div class="collapse navbar-collapse jcc" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <Link class="nav-link active text-uppercase" aria-current="page" href="/">acceuil</Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link text-uppercase" href="/equipe">l'équipe</Link>
+            </li>
+            <li class="nav-item dropdown">
+              <Link class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                saisons
+              </Link>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><Link class="dropdown-item" href="/saison23">SAISON 2023</Link></li>
+                <li><Link class="dropdown-item" href="/saison24">SAISON 2024</Link></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link text-uppercase" href="/sponsors">sponsors</Link>
+            </li>
           </ul>
-         
-        <CustomButton text="contact" style="contactBtn" link="/contact"/> 
+        </div>
+        <Link class="btn btn-outline-success bg-noir text-light" href="/contact">CONTACT</Link>
       </div>
-          
-    </div>
+      </nav>
+ 
   )
 };
 

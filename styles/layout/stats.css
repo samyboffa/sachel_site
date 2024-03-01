@@ -1,3 +1,11 @@
 .stats_div{
     height: 140px;
+    margin-bottom: 230px;
+}
+.stat_span{
+    font-family: "Termina", sans-serif;
+}
+.stat_txt{
+    font-family: 'Manrope',sans-serif;
+    font-weight: 500;
 }

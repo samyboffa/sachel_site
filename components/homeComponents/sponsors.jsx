@@ -17,7 +17,7 @@ const Sponsors = () => {
                 })
             }
         </div>
-        <CustomButton text="DEVENIR SPONSOR" style="sponsorBtn" link="/contact"/>
+        <CustomButton text="DEVENIR SPONSOR" link="/sponsors"/>
     </div>
     
   )

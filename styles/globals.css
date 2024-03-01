@@ -35,10 +35,10 @@ ul{
   margin: 0 ;
   padding: 0 ;
 }
-a{
+/* a{
   text-decoration: none !important;
   color:#010632 !important;
-}
+} */
 li{
   list-style: none;
 }
