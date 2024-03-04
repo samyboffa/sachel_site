@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Smooch&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +10,23 @@ body{
   background-color: #EDF0F3;
 
 }
+.f14{
+  font-size: 14px;
+}
 .f16{
   font-size: 16px;
 }
+.f24{
+  font-size: 24px;
+}
 .f32{
   font-size: 32px;
+}
+.f40{
+  font-size: 40px;
+}
+.f48{
+  font-size: 48px;
 }
 .f56{
   font-size: 56px;
@@ -35,6 +49,12 @@ ul{
   margin: 0 ;
   padding: 0 ;
 }
+.manrope{
+  font-family: "Manrope";
+}
+.termina{
+  font-family: "Termina", sans-serif;
+}
 /* a{
   text-decoration: none !important;
   color:#010632 !important;
@@ -51,9 +71,10 @@ h1{
 @import url(./layout/customBtn.css);
 @import url(./layout/navbar.css);
 @import url(./layout/footer.css);
-@import url(./layout/sponsors.css);
 @import url(./layout/infosection.css);
 @import url(./layout/hero_homepage.css);
 @import url(./layout/bluePageSeparator.css);
 @import url(./layout/stats.css);
+@import url(./layout/equipe.css);
+@import url(./layout/saisons.css);
 

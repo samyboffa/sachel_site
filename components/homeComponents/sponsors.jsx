@@ -4,20 +4,20 @@ import CustomButton from '../commons/CustomButton'
 
 const Sponsors = () => {
   return (
-    <div className="sponsor_section">
-        <h1 className="sponsor_title">mes partenaires</h1>
-        <div className="sponsor_div dfr jcc">
+    <div className="container my-5 text-center">
+        <h1 className="f48 text-uppercase ">mes partenaires</h1>
+        <div className="d-flex flex-wrap justify-content-center gap-3 my-5">
             {
                 sponsorsData.map((sponsors,idx)=>{
                 return(
-                    <div className="single_sponsor" key={idx}>
+                    <div  key={idx}>
                         <img src={sponsors.imgUrl} alt={sponsors.imgDesc} />
                     </div>
                 )
                 })
             }
         </div>
-        <CustomButton text="DEVENIR SPONSOR" link="/sponsors"/>
+        <CustomButton style="btn bg-yellow btn-outline-success text-left" text="DEVENIR SPONSOR" link="/sponsors"/>
     </div>
     
   )

@@ -1,0 +1,60 @@
+.equipe_hero{
+    font-family: "Termina",sans-serif;
+    height: 740px;
+}
+.equipe_hero_text{
+    font-family: "Manrope";
+}
+.sachel-sign{
+    font-family: "Smooch";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.circle{
+    height: 32px;
+    width: 32px;
+}
+.inner-circle{
+    width: 16px;
+    height: 16px;
+}
+.line{
+    height: 1px;
+    width: 40%;
+    border: 2px solid #010632;
+    opacity: 0.2;
+}
+.objectif_txt{
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.member_desc{
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.carousel-section{
+    height: 500px;
+    background: linear-gradient(155.76deg, #011F5D 2.03%, #0F2949 87.24%);
+
+}
+.temoignage-titre{
+    font-family: "Termina",sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+.text-temoignage{
+    font-family: "Termina",sans-serif;
+}
+.temoignage-auteur{
+    font-family: "Termina", sans-serif;
+}

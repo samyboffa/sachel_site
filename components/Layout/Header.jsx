@@ -1,8 +1,12 @@
-import CustomButton from "../commons/CustomButton";
 import Link from "next/link";
+import { useState } from "react";
 
 
 const Header = () => {
+  const [showDrop,setShowDrop]=useState(false)
+  const toggleMenu=()=>{
+    setShowDrop(!showDrop)
+  }
   
   return(
    
@@ -10,7 +14,7 @@ const Header = () => {
       <div class="container ">
         <Link class="navbar-brand f24 fw-bold" href="/">Sachel Rotge</Link>
         <div class="collapse navbar-collapse jcc" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
+          <ul class="navbar-nav gap-3 mb-2 mb-lg-0">
             <li class="nav-item">
               <Link class="nav-link active text-uppercase" aria-current="page" href="/">acceuil</Link>
             </li>
@@ -18,12 +22,12 @@ const Header = () => {
               <Link class="nav-link text-uppercase" href="/equipe">l'équipe</Link>
             </li>
             <li class="nav-item dropdown">
-              <Link class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                saisons
+              <Link class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={()=>toggleMenu()}>
+               saisons
               </Link>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><Link class="dropdown-item" href="/saison23">SAISON 2023</Link></li>
-                <li><Link class="dropdown-item" href="/saison24">SAISON 2024</Link></li>
+              <ul class={showDrop?"dropdown-menu d-block border-0 drop-menu":"dropdown-menu"} aria-labelledby="navbarDropdown">
+                <li><Link class="dropdown-item text-uppercase" href="/saison23">saison 2023</Link></li>
+                <li><Link class="dropdown-item text-uppercase" href="/saison24">saison 2024</Link></li>
               </ul>
             </li>
             <li class="nav-item">

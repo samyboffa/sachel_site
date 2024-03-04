@@ -12,24 +12,24 @@ const Header = () => {
     console.log(btnToggle)
   }
   return  (
-    <div className='dfr jcsb nav_bar'>
+    
       <div className="container dfr jcsb">
-        <h1 className="logo dfr fs24">Sachel rotge</h1>
-        <ul className="nav_list dfr">
-          <li className="nav_link"><Link href="/">acceuil</Link></li>
-          <li className="nav_link"><Link href="/equipe">l'équipe</Link></li>
-          <li className="nav_link" onClick={()=>toggleMenu()} >saisons<FontAwesomeIcon icon={faChevronDown} className='cheveron' /></li>
-          <li className="nav_link"><Link href="/sponsors">sponsors</Link></li>
+        <Link class="navbar-brand f24 fw-bold" href="/">Sachel Rotge</Link>
+        <ul className="navbar-nav mb-2 d-flex w-auto">
+          <li className="nav-item text-uppercase"><Link className='nav-link' href="/">acceuil</Link></li>
+          <li className="nav-item text-uppercase"><Link className='nav-link' href="/equipe">l'équipe</Link></li>
+          <li className="nav-item text-uppercase" onClick={()=>toggleMenu()} ><Link className='nav-link' href="/equipe">saisons<FontAwesomeIcon icon={faChevronDown} className='cheveron' /></Link></li>
+          <li className="nav-item text-uppercase"><Link className='nav-link' href="/sponsors">sponsors</Link></li>
         </ul>
-        <ul className={btnToggle? "saison_menu aic jcc": " hide"}>
+        {/* <ul className={btnToggle? "saison_menu aic jcc": " hide"}>
            <Link href='/saison23' onClick={()=>toggleMenu()}  className='saison_link dfr aic jcc' >SAISON 2023</Link>
             <Link href='/saison24' onClick={()=>toggleMenu()} className='saison_link dfr aic jcc'>SAISON 2024</Link>
-          </ul>
+          </ul> */}
          
         <CustomButton text="contact" style="contactBtn" link="/contact"/> 
       </div>
           
-    </div>
+    
   )
 };
 

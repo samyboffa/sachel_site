@@ -1,11 +1,9 @@
 .blueSeparator{
     height: 100%;
     background-image: url('../../public/blueSeparatorBCG.png');
-    width: 100%;
     background-repeat: no-repeat;
     background-size:auto;
     background-position: right center;
-    width: 100%;
     margin: 200px 0;
 }
 .data{

@@ -16,7 +16,7 @@ const Footer = () => {
       <li className="nav-item text-uppercase text-light"><Link className="nav-link"href="/mentionsLegales">mentions légales</Link></li>
     </ul>
     <Link className="nav-link" href="/"><FontAwesomeIcon icon={faInstagram} /></Link>
-    <h6 className="footer_dev">Développé avec <span className="heart">♥</span> par Tendances.Group © 2023. Tous droits réservés.</h6>
+    <h6 className="col-md-6 m-auto">Développé avec <span className="heart">♥</span> par Tendances.Group © 2023. Tous droits réservés.</h6>
   </div>;
 };
 

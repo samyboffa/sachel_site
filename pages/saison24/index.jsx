@@ -1,9 +1,13 @@
-import React from 'react'
+import Courses from "@/components/commons/saison24Components/listeCourses";
+import React from "react";
+import saison24 from "@/data/saison24";
 
 const Saison24 = () => {
   return (
-    <div>Saison24</div>
-  )
-}
+    <div className="container">
+      <Courses liste_courses={saison24} link="#" />
+    </div>
+  );
+};
 
-export default Saison24
+export default Saison24;

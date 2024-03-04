@@ -1,20 +1,37 @@
-import React from 'react'
+import React from "react";
+import CheveronTxt from "./cheveronTxt";
 
-
-
-const InfoSection = (props) => {
+const InfoSection = ({ imgUrl, reverse, title, txt, btnTxt, Array }) => {
   return (
-    <div className="container">
-      <section className="row d-flex container section_container " >
-        <div className=" img_container d-flex justify-content-center"><img src={props.imgUrl} alt="sachel_pilote" className="section_img" /></div>
-        <div className="col-md-1 section_description d-flex flex-column justify-content-end h-100 my-auto text-noir ">
-            <h5 className="section_title fw-bold mb-4">{props.title}</h5>
-            <p className="section_text lh-lg fw-medium mb-3  ">{props.txt}</p>
-            <button className={props.btnTxt?"sectionBtn bg-light-subtle fw-bolder ":"hidden"} >{props.btnTxt}</button>
+    <div className="container my-5">
+      <section
+        className={
+          reverse
+            ? "row d-flex container section_container flex-md-row-reverse "
+            : "row d-flex container section_container  "
+        }
+      >
+        <div className=" img_container d-flex justify-content-center">
+          <img src={imgUrl} alt="sachel_pilote" className="section_img" />
         </div>
-    </section>
-    </div>
-  )
-}
+        <div className="col-md-1 section_description d-flex flex-column justify-content-center h-100 my-auto text-noir ">
+          <h5 className="section_title fw-bold mb-3 mt-5">{title}</h5>
+          <p className="section_text lh-lg fw-medium mb-3  ">{txt}</p>
+          {Array?.map((item, idx) => {
+            return <CheveronTxt item={item} key={idx} />;
+          })}
 
-export default InfoSection
+          <button
+            className={
+              btnTxt ? "sectionBtn bg-light-subtle fw-bolder " : "hidden"
+            }
+          >
+            {btnTxt}
+          </button>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default InfoSection;
