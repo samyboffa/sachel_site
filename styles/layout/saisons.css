@@ -29,3 +29,18 @@
     font-family: "Termina", sans-serif;
     padding: 144px 0;
 }
+.power{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+.power-separator{
+    border: 2px solid #DFDE10;
+    width: 78px;
+}
+.multi_details{
+    width: max-content;
+    text-align: center;
+}
+.saison23_section3{
+    width: 80%;
+}

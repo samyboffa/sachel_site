@@ -1,8 +1,8 @@
 import BluePageSeparator from "@/components/commons/bluePageSeparator";
 import InfoSection from "@/components/commons/infoSection";
-import Stats from "@/components/homeComponents/stats";
+import Stats from "@/components/commons/stats";
 import Hero from "@/components/homeComponents/hero";
-import Sponsors from "@/components/homeComponents/sponsors";
+import Sponsors from "@/components/commons/sponsors";
 
 export default function Home() {
   return (
@@ -20,14 +20,14 @@ export default function Home() {
         imgUrl="./home_sep_img.png"
         btn={true}
       />
-      <Stats />
+      <Stats num1="3" num2="+80" num3="4 ans" txt1="Championnats : Essais en course d’endurance, Karting & Sim racing" txt2="Courses réalisées" txt3="D’expérience dans le karting"/>
       <InfoSection
         imgUrl="./endurance.png"
         title="ensemble, vers la performance !"
         txt="Sachel, passionné de sport automobile, se prépare pour une période cruciale de sa carrière. En 2024, il effectuera ses premiers essais en Formule 4, Ligier JS2R et GT, tout en disputant sa dernière année de compétition en karting et en s'engageant dans l'aventure Feed Racing F4. L'année suivante marquera son passage complet au monde de l'automobile, se lançant dans les compétitions d'endurance. À l'horizon 2028-2029, Sachel aspire à devenir un pilote professionnel d'endurance, réalisant ainsi son rêve ultime de participer aux prestigieuses compétitions de cette discipline."
         btnTxt=""
       />
-      <Sponsors />
+      <Sponsors data={false} />
     </>
   );
 }

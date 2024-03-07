@@ -2,9 +2,8 @@
     height: 950px;
     background: url('../../public/hero_bcg.png');
     background-repeat: no-repeat;
-    background-size:auto;
     background-position: right center;
-    width: 100%;
+    background-size: auto;
     position: relative;
 }
 .hero_data{

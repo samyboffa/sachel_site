@@ -7,6 +7,8 @@
     overflow: visible;
     height: auto;
     width: 50%;
+    align-self:center;
+    right: 0;
 }
 .section_img{
     object-fit: contain;
@@ -29,7 +31,7 @@
     border: none;
     cursor: pointer;
     height: 48px;
-    width: 159px;
+    
 }
 .hidden{
     display: none;
@@ -38,5 +40,6 @@
     font-family: "Manrope";
     font-size: 18px;
     font-weight: 600;
+    margin: 0;
 
 }

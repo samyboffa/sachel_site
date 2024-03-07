@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rock+Salt&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Rock+Salt&family=Smooch&display=swap');
+
+
 
 * {
   margin: 0;
@@ -10,17 +14,32 @@ body{
   background-color: #EDF0F3;
 
 }
+.smooch{
+  font-family: "Smooch";
+}
+.rock-salt{
+  font-family: "Rock Salt";
+}
+.archivo{
+  font-family: "Archivo";
+}
 .f14{
   font-size: 14px;
 }
 .f16{
   font-size: 16px;
 }
+.f20{
+  font-size: 20px;
+}
 .f24{
   font-size: 24px;
 }
 .f32{
   font-size: 32px;
+}
+.f40{
+  font-size: 40px;
 }
 .f40{
   font-size: 40px;
@@ -55,6 +74,12 @@ ul{
 .termina{
   font-family: "Termina", sans-serif;
 }
+.lh-32{
+  line-height: 32px;
+}
+.lh-24{
+  line-height: 24px;
+}
 /* a{
   text-decoration: none !important;
   color:#010632 !important;
@@ -68,6 +93,10 @@ li{
 h1{
   margin: 0 !important;
 }
+.faIcon{
+  color: #77787A;
+  cursor: pointer;
+}
 @import url(./layout/customBtn.css);
 @import url(./layout/navbar.css);
 @import url(./layout/footer.css);
@@ -77,4 +106,6 @@ h1{
 @import url(./layout/stats.css);
 @import url(./layout/equipe.css);
 @import url(./layout/saisons.css);
+@import url(./layout/sponsors.css);
+@import url(./layout/contact.css);
 

@@ -5,7 +5,8 @@ import saison24 from "@/data/saison24";
 const Saison24 = () => {
   return (
     <div className="container">
-      <Courses liste_courses={saison24} link="#" />
+      <Courses liste_courses={saison24} link="#" title="SAISON 2024"/>
+      
     </div>
   );
 };

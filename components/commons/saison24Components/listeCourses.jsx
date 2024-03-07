@@ -2,10 +2,10 @@ import React from "react";
 import CourseItem from "./CourseItem";
 import CustomButton from "../CustomButton";
 
-const Courses = ({ liste_courses, link }) => {
+const Courses = ({ liste_courses, link, title }) => {
   return (
     <div className="my-5 ">
-      <h1 className="text-center f48 fw-bold saison24-title">SAISON 2024</h1>
+      <h1 className="text-center f48 fw-bold saison24-title">{title}</h1>
       {liste_courses?.map((course, idx) => {
         return <CourseItem key={idx} course={course} idx={idx} />;
       })}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import Contact from "../commons/Contact";
 
 
 const Header = () => {
@@ -7,7 +8,11 @@ const Header = () => {
   const toggleMenu=()=>{
     setShowDrop(!showDrop)
   }
-  
+  const [contact,setContact]=useState(false);
+  const toggleContact = ()=>{
+      setContact(!contact)
+  }
+
   return(
    
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,8 +31,8 @@ const Header = () => {
                saisons
               </Link>
               <ul class={showDrop?"dropdown-menu d-block border-0 drop-menu":"dropdown-menu"} aria-labelledby="navbarDropdown">
-                <li><Link class="dropdown-item text-uppercase" href="/saison23">saison 2023</Link></li>
-                <li><Link class="dropdown-item text-uppercase" href="/saison24">saison 2024</Link></li>
+                <li><Link class="dropdown-item nav-link text-uppercase" href="/saison23" onClick={()=>toggleMenu()} >saison 2023</Link></li>
+                <li><Link class="dropdown-item nav-link text-uppercase" href="/saison24" onClick={()=>toggleMenu()}>saison 2024</Link></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -35,7 +40,8 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <Link class="btn btn-outline-success bg-noir text-light" href="/contact">CONTACT</Link>
+        <button class="btn btn-outline-success bg-noir text-light" onClick={toggleContact}>CONTACT</button>
+        <Contact contact={contact} toggle={toggleContact}/>
       </div>
       </nav>
  

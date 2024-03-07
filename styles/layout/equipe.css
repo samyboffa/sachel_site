@@ -1,9 +1,10 @@
 .equipe_hero{
     font-family: "Termina",sans-serif;
-    height: 740px;
+    height: auto;
 }
 .equipe_hero_text{
     font-family: "Manrope";
+    padding-right: 40%;
 }
 .sachel-sign{
     font-family: "Smooch";

@@ -1,0 +1,52 @@
+.sponsor_container{
+    height: 950px;
+    background-image: url('../../public/sponsor_hero_bg.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto;
+    position: relative;
+}
+.sponsor_hero_img_container{
+    position: relative;
+}
+.sponsor_hero_racer{
+    position: absolute;
+    right: 0;
+}
+.sponsor_banner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 46px;
+}
+.sonpsor_details{
+    text-align: left;
+}
+.sponsors_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 8%;
+}
+.partenariat{
+    height: 870px ;
+     background-image: url('../../public/partenariat-bg.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: right center;
+}
+.partenariat-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+}
+.helmet-container{
+    height: 80px;
+    width: 80px;
+}
+.transparent{
+    background: rgba(1, 6, 50, 0.25);
+
+}
