@@ -12,7 +12,7 @@ const BluePageSeparator = ({ title, text, imgUrl, btn,Array }) => {
  
           {btn ? (
             <CustomButton
-              style="btn bg-yellow text-center"
+              style="border-0 p-3 fw-800 manrope bg-yellow text-center"
               text="EN SAVOIR PLUS"
               link="#"
             />

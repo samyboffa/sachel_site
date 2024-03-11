@@ -2,6 +2,10 @@
   width: auto;
   margin-top: 1rem;
 }
+.yellowbTn{
+  text-decoration: none;
+  color: #101632;
+}
 @media (max-width:992px){
     .customBtn{
       width: 80%;

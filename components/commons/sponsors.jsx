@@ -38,7 +38,7 @@ const Sponsors = ({data}) => {
                 })
             }
         </div>
-        <CustomButton style="btn bg-yellow btn-outline-success text-left" text="DEVENIR SPONSOR" link="/sponsors"/>
+        <CustomButton style="bg-yellow  text-left" text="DEVENIR SPONSOR" link="/sponsors"/>
     </div>
     
   )

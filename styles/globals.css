@@ -14,6 +14,18 @@ body{
   background-color: #EDF0F3;
 
 }
+.bg-noir{
+  background-color: #010632;
+}
+.text-noir{
+  color: #010632;
+}
+.bg-yellow{
+  background-color: #DFDE10;
+}
+.text-yellow{
+  color: #DFDE10;
+}
 .smooch{
   font-family: "Smooch";
 }

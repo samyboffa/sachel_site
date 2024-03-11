@@ -4,12 +4,9 @@ import CustomButton from "../CustomButton";
 
 const Courses = ({ liste_courses, link, title, subTitle }) => {
   return (
-    <div className="my-5 container ">
-      
+    <div className="my-5 container">    
         <h1 className="text-center f48 fw-bold termina">{title}</h1>
-        <p className="mapnrope f16 fw-500  text-md-center text-sm-left mx-auto my-5">{subTitle}</p>
-      
-      
+        <p className="mapnrope f16 fw-500 text-md-center text-sm-left mx-auto my-5">{subTitle}</p>
       {liste_courses?.map((course, idx) => {
         return <CourseItem key={idx} course={course} idx={idx} />;
       })}

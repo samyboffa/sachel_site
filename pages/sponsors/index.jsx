@@ -20,7 +20,7 @@ const index = () => {
       <Majeur/>
       <Stats num1="60%" num2="2.5 Mrd&euro;" num3="1 club" txt1="De réduction d’impôt sur du mécénat" txt2="Le marché du sponsoring en France" txt3="Des partenaires"/>
       <div className='d-flex jcc'>
-      <CustomButton text="devenir sponsor" link="#" style="bg-yellow border-0 p-3 text-uppercase mx-auto"/>
+      <CustomButton text="devenir sponsor" link="#" style="bg-yellow p-3 text-uppercase mx-auto"/>
       </div>
       <div className='text-center my-5 '>
         <p className='rock-salt f20 fw-medium w-25 mx-auto'>“La course, c'est la vie. Tout le reste, avant ou après, n'est que de l'attente. ”</p>

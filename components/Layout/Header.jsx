@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Contact from "../commons/Contact";
 import { useRouter } from "next/router";
+import ContactContext from "@/context/ContactContext";
 
 
 const Header = () => {
@@ -10,14 +11,11 @@ const Header = () => {
   const toggleMenu=()=>{
     setShowDrop(!showDrop)
   }
-  const [contact,setContact]=useState(false);
-  const toggleContact = ()=>{
-      setContact(!contact)
-  }
   const[showMenu, setShowMenu]=useState(false)
   const toggleSmMenu=()=>{
     setShowMenu(!showMenu)
   }
+  const { contact, toggleContact } = useContext(ContactContext);
 
   return(
    
@@ -26,7 +24,6 @@ const Header = () => {
         <Link class="navbar-brand f24 fw-bold" href="/">Sachel Rotge</Link>
         <div class="" id="navbarSupportedContent">
           <ul class={showMenu? "navbar-nav-show navbar-nav gap-3 mb-2 mb-lg-0":"navbar-nav-hide navbar-nav gap-3 mb-2 mb-lg-0"}>
-          {/* <ul class="navbar-nav  gap-3 mb-2 mb-lg-0"> */}
             <li class="nav-item">
             <button className="menu-close-btn" onClick={toggleSmMenu}>X</button>
               <Link className={router.pathname === '/' ? 'active nav-link fw-700 text-uppercase' : 'nav-link fw-700 text-uppercase'} aria-current="page" href="/" onClick={toggleSmMenu}>acceuil</Link>
@@ -48,9 +45,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <button class="border-1 p-3 bg-noir text-noir manrope d-xs-none d-md-block" onClick={toggleContact}>CONTACT</button>
+        <button class="border-0 p-3 bg-noir text-light manrope d-xs-none d-md-block" onClick={toggleContact}>CONTACT</button>
         <div className="menu">
-          <img src="./menu.png" alt="menu"  onClick={toggleSmMenu} />
+          <img src="./menu.png" alt="menu" onClick={toggleSmMenu} />
         </div>        
           {<Contact contact={contact} toggle={toggleContact}/>}                
       </div>

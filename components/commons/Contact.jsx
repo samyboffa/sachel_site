@@ -38,7 +38,7 @@ const Contact = ({contact,toggle}) => {
   
   return (
     
-    <div className={contact? "sidebar-active active":"sidebar-container"}>  
+    <div className={contact? "sidebar-active active":"d-none"}>  
         <div className={contact? "contact-form active":"contact-form"}>
             <div className="d-flex aic archivo">
                 <button className="close-btn" onClick={toggle}>&#129064;</button>
@@ -51,8 +51,6 @@ const Contact = ({contact,toggle}) => {
                         <input className='manrope fw-500' type="text" name="prenom" id="" placeholder='Nom & Prénom' onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.prenom} />
-                        
-                        
                     </div>
                     <div className="col-md-6 d-flex flex-column">
                         <label htmlFor="email" className='manrope f14 text-noir fw-medium mb-2'>Email</label>
