@@ -1,18 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rock+Salt&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Rock+Salt&family=Smooch&display=swap');
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.f16 {
+body{
+  background-color: #EDF0F3;
+
+}
+.bg-noir{
+  background-color: #010632;
+}
+.text-noir{
+  color: #010632;
+}
+.bg-yellow{
+  background-color: #DFDE10;
+}
+.text-yellow{
+  color: #DFDE10;
+}
+.smooch{
+  font-family: "Smooch";
+}
+.rock-salt{
+  font-family: "Rock Salt";
+}
+.archivo{
+  font-family: "Archivo";
+}
+.f14{
+  font-size: 14px;
+}
+.f16{
   font-size: 16px;
 }
-.f18 {
+.f18{
   font-size: 18px;
 }
-.alignC {
+.f20{
+  font-size: 20px;
+}
+.f24{
+  font-size: 24px;
+}
+.f32{
+  font-size: 32px;
+}
+.f40{
+  font-size: 40px;
+}
+.f40{
+  font-size: 40px;
+}
+.f48{
+  font-size: 48px;
+}
+.f56{
+  font-size: 56px;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fw-800{
+  font-weight: 800;
+}
+.lh32{
+  line-height: 32px;
+}
+.op-50{
+  opacity: 0.5;
+}
+.op-70{
+  opacity: 0.7;
+}
+.dfr{
   display: flex;
+  align-items: center;
+ 
+}
+.jcsb{
+  justify-content: space-between;
+}
+.jcc{
   justify-content: center;
+}
+.aic{
   align-items: center;
 }
+ul{
+  margin: 0 ;
+  padding: 0 ;
+}
+.manrope{
+  font-family: "Manrope";
+}
+.termina{
+  font-family: "Termina", sans-serif;
+}
+.lh-48{
+  line-height: 48px;
+}
+.lh-32{
+  line-height: 32px;
+}
+.lh-24{
+  line-height: 24px;
+}
 
-@import url(./layout/Layout.css);
+.px-108{
+  padding: 0 108px
+}
+/* a{
+  text-decoration: none !important;
+  color:#010632 !important;
+} */
+li{
+  list-style: none;
+}
+.upCase{
+  text-transform: uppercase;
+}
+h1{
+  margin: 0 !important;
+}
+.faIcon{
+  color: #77787A;
+  cursor: pointer;
+}
+
+@import url(./layout/customBtn.css);
+@import url(./layout/navbar.css);
+@import url(./layout/footer.css);
+@import url(./layout/infosection.css);
+@import url(./layout/hero_homepage.css);
+@import url(./layout/bluePageSeparator.css);
+@import url(./layout/stats.css);
+@import url(./layout/equipe.css);
+@import url(./layout/saisons.css);
+@import url(./layout/sponsors.css);
+@import url(./layout/contact.css);
+

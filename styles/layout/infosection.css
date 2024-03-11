@@ -1,0 +1,13 @@
+.info_sec_img{
+    width: 100%;
+    height: 100%;
+     
+}
+.hidden{
+    display: none;
+}
+@media (max-width:992px){
+    .w-sm-100{
+        width: 100%;
+    }
+}

@@ -1,0 +1,77 @@
+.sponsor_container{
+    position: relative;
+}
+/* .sponsor_hero{
+    display:block;
+}
+.sponsor_hero_inverted{
+    display: none;
+} */
+.sponsor_hero_img_container{
+    background: url('../../public/hero_bcg.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain; 
+}
+
+.sponsor_banner{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 46px;
+}
+.sonpsor_details{
+    text-align: left;
+}
+.sponsors_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 8%;
+}
+.partenariat{
+    background-image: url('../../public/partenariat-bg.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right center;
+}
+.partenariat-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 5%;
+} 
+.helmet-container{
+    height: 80px;
+    width: 80px;
+}
+.transparent{
+   background: rgba(1, 6, 50, 0.25);
+   
+
+}
+.racing-suit{
+    object-fit: cover;
+}
+.s{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+@media (max-width:992px ) {
+
+    .sponsor_hero_img_container{
+        background: url('../../public/fond_hero_sm.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;   
+    }
+    .sponsor_hero{
+        display: none;
+    }
+    .sponsor_hero_inverted{
+        display: block;
+    }
+}

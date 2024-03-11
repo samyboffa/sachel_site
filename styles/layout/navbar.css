@@ -1,0 +1,55 @@
+.nav-link{
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+.drop-menu{
+    box-shadow: 0px 4px 50px 0px #0000001F;
+    border-radius: 2px;
+}
+.hover:hover{
+    background: rgba(1, 6, 50, 0.12);
+
+}
+.menu-close-btn{
+    display: none;
+}
+.menu{
+    display: none;
+    margin-left: auto;
+}
+.side-bar-div{
+    display: none;
+}
+@media (max-width:992px)
+{
+    .navbar-nav-show{
+        position: absolute;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        text-align: center;
+        font-size: 32px;
+        padding:50px ;
+        z-index: 200;
+        background-color: white;
+        transition: all 0.5s ease-in-out;
+        
+    }
+    .navbar-nav-hide{
+        display: none;
+    }
+    .menu-close-btn{
+        display: block;
+        border: none;
+        margin-left: auto;
+        background-color: white;
+    }
+    .menu{
+    display: block;
+    }
+    .drop-menu{
+    box-shadow: none;
+    border-radius: 0;
+}
+}

@@ -1,0 +1,34 @@
+.blueSeparator{
+    background-image: url('../../public/blueSeparatorBCG.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:  center;
+    margin: 230px 0;
+    overflow: visible;
+}
+.data_title{
+    font-family: "Termina", sans-serif;
+}
+.data_text{
+    font-family: 'Manrope',sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img_container_separator{
+    align-self:flex-end;
+    height: 100%;
+    
+}
+.separator_img{
+    height: 120%;
+}
+@media (max-width:992px){
+    .separator_img{
+    object-fit: contain;
+    }
+    .blueSeparator{
+    margin: 100px 0;
+}
+}

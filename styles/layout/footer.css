@@ -1,0 +1,17 @@
+.footer_container{
+    padding: 88px 0px 54px 0px;
+    gap: 56px;
+    background: linear-gradient(249.36deg, #0F2949 34.7%, #011F5D 104.23%);
+}
+.footer_list{
+    margin: 0 auto;
+    gap: 40px;
+}
+.footer_container a svg{
+    cursor: pointer;
+    height: 24px;
+}
+.heart{
+    color: red;
+}
+
