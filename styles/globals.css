@@ -29,6 +29,9 @@ body{
 .f16{
   font-size: 16px;
 }
+.f18{
+  font-size: 18px;
+}
 .f20{
   font-size: 20px;
 }
@@ -49,6 +52,27 @@ body{
 }
 .f56{
   font-size: 56px;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fw-800{
+  font-weight: 800;
+}
+.lh32{
+  line-height: 32px;
+}
+.op-50{
+  opacity: 0.5;
+}
+.op-70{
+  opacity: 0.7;
 }
 .dfr{
   display: flex;
@@ -74,11 +98,18 @@ ul{
 .termina{
   font-family: "Termina", sans-serif;
 }
+.lh-48{
+  line-height: 48px;
+}
 .lh-32{
   line-height: 32px;
 }
 .lh-24{
   line-height: 24px;
+}
+
+.px-108{
+  padding: 0 108px
 }
 /* a{
   text-decoration: none !important;
@@ -97,6 +128,7 @@ h1{
   color: #77787A;
   cursor: pointer;
 }
+
 @import url(./layout/customBtn.css);
 @import url(./layout/navbar.css);
 @import url(./layout/footer.css);

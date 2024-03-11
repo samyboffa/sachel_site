@@ -1,6 +1,8 @@
 import React from 'react'
 import {useFormik} from 'formik'
 import CustomButton from './CustomButton';
+import PhoneInput from 'react-phone-number-input'
+
 
 const Contact = ({contact,toggle}) => {
 
@@ -9,7 +11,7 @@ const Contact = ({contact,toggle}) => {
       prenom:'',
       email: '',
       phone:'',
-      type:'type_1',
+      type:'',
       msg:'',
       
     },
@@ -36,17 +38,17 @@ const Contact = ({contact,toggle}) => {
   
   return (
     
-    <div className={contact? "sidebar-active":"sidebar-container"}>  
+    <div className={contact? "sidebar-active active":"sidebar-container"}>  
         <div className={contact? "contact-form active":"contact-form"}>
-            <div className="d-flex aic  gap-4 archivo">
+            <div className="d-flex aic archivo">
                 <button className="close-btn" onClick={toggle}>&#129064;</button>
                 <h1 className="archivo f24">Contact</h1>
             </div>          
-            <form className="container " onSubmit={formik.handleSubmit}>
-                <div className="row d-flex my-5">
+            <form className="container p-md-3 formik" onSubmit={formik.handleSubmit}>
+                <div className="row d-flex flex-md-row flex-sm-column my-5">
                     <div className="col-md-6 d-flex flex-column">
                         <label htmlFor="prenom" className='manrope f14 text-noir mb-2'>Nom et Prénom</label>
-                        <input className='contact-input' type="text" name="prenom" id="" placeholder='Nom & Prénom' onChange={formik.handleChange}
+                        <input className='manrope fw-500' type="text" name="prenom" id="" placeholder='Nom & Prénom' onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.prenom} />
                         
@@ -54,31 +56,36 @@ const Contact = ({contact,toggle}) => {
                     </div>
                     <div className="col-md-6 d-flex flex-column">
                         <label htmlFor="email" className='manrope f14 text-noir fw-medium mb-2'>Email</label>
-                        <input className='contact-input' type="email" name="email" id="" placeholder='Email' onChange={formik.handleChange}
+                        <input className='manrope fw-500' type="email" name="email" id="" placeholder='Email' onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.email}/>
                         
                     </div>
                 </div>
-                <div className="row d-flex my-5">
+                <div className="row d-flex flex-md-row flex-sm-column my-5">
                     <div className="col-md-6 d-flex flex-column">
                         <label htmlFor="phone" className='manrope f14 text-noir fw-medium mb-2'>Téléphone</label>
-                        <input className='contact-input' type="tel" name="phone" id="" placeholder='Numéro de téléphone'onChange={formik.handleChange}
+                        <input className='manrope fw-500' type="tel" name="phone" id="" placeholder='Numéro de téléphone'onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.phone}/>
+                        {/* <PhoneInput
+                        defaultCountry="FR"
+                        placeholder="Enter phone number"
+                        value={formik.values.phone}
+                        onChange={formik.handleChange}/> */}
                     </div>
                     <div className="col-md-6 d-flex flex-column">
                         <label htmlFor="prestation" className='manrope f14 text-noirfw-medium mb-2'>Type de demande</label>
-                        <select className='contact-input' name="type" id="" onChange={formik.handleChange}
+                        <select className='manrope fw-500' placeholder='Choose a type' name="type" id="" onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
-                        value={formik.values.prestation}>
+                        value={formik.values.prestation}>   
                         <option value="type1">Type 1</option>
                         <option value="type2">Type 2</option>
                     </select>
                     </div>
                 </div>
                 <div className="row my-5 px-2  d-flex jcc">
-                    <label htmlFor="msg" className='manrope f14 text-noir fw-medium px-0 mb-2'>Message</label>
+                    <label htmlFor="msg fw-500" className='manrope f14 text-noir fw-medium px-0 mb-2'>Message</label>
                     <textarea className='text-area' name="msg" id="" cols="30" rows="10" placeholder='Décrivez votre demande'onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.msg}></textarea> 

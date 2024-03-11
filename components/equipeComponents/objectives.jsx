@@ -3,7 +3,7 @@ import BluePageSeparator from "../commons/bluePageSeparator";
 
 const Objectifs = () => {
   return (
-    <div className="container my-5">
+    <div className="container my-5 horizontal_objectif">
       <div className=" row d-flex aic jcc w-75 mx-auto mb-4">
         <span className="circle border border-yellow d-flex aic jcc p-0 m-0 rounded-circle ">
           <span className="inner-circle bg-yellow rounded-circle  "></span>
@@ -34,7 +34,7 @@ const Objectifs = () => {
           </p>
         </div>
         <div className="col-md-4">
-          <span>28-29</span>
+          <span>2028-29</span>
           <p className="objectif_txt">
             Devenir un pilote professionnel d'endurance et réaliser le rêve
             ultime : participer aux prestigieuses 24 heures du Mans.

@@ -1,33 +1,21 @@
-.course-txt{
-    font-family: 'Manrope';
-    line-height: 32px;
-}
-.borderTest{
-    border: 2px solid red;
-    z-index: 2;
-}
+
 .separator{
     width: 1px;
     height: 100%;
-    z-index: 1;
+    z-index: -2;
     border-left: 2px dashed black;
     position: absolute;
     top: 0;
     left: 50%;
-    right: 50%;
-    
+    right: 50%;  
 }
 .number{
     font-family: 'Termina',sans-serif;
     width: 50px;
     height: 50px;
-    z-index: 200;
+    z-index: -1;
     margin: 50% 96px;
     
-}
-.saison24-title{
-    font-family: "Termina", sans-serif;
-    padding: 144px 0;
 }
 .power{
     color: transparent;
@@ -38,9 +26,12 @@
     width: 78px;
 }
 .multi_details{
-    width: max-content;
-    text-align: center;
+    width: fit-content;
+    
+    /* width: max-content; */
+    /* text-align: center; */
 }
-.saison23_section3{
-    width: 80%;
+.img_container_s23_sec3 img{
+    width: 100%;
+    height: 100%;
 }

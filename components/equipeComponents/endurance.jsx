@@ -1,4 +1,5 @@
 import React from "react";
+import RacerCard from "../commons/RacerCard";
 
 const Endurance = () => {
   return (
@@ -8,13 +9,10 @@ const Endurance = () => {
           La team endurance
         </h2>
       </div>
-      <div className="row-md-8  mx-auto d-flex jcc  ">
-        <div className="col-md-4 flex-column ">
-          <img src="./romain.png" alt="romain" />
-          <p className="fw-bolder mt-3 mb-2">Roberto Costantini</p>
-          <p className="member_desc">Pilote</p>
-        </div>
+      <div className="d-flex jcc">
+        <RacerCard imgUrl='./romain.png' name="Roberto Costantini" role="Pilote"/>
       </div>
+      
     </div>
   );
 };

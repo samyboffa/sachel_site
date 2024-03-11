@@ -1,22 +1,18 @@
 import React from 'react'
 import sponsorsData from '@/data/sponsorsData'
 import CustomButton from './CustomButton'
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faTiktok } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faYoutube, faSquareFacebook, faTiktok, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Sponsors = ({data}) => {
   return (
     <div className="container my-5 text-center">
-        <h1 className="f48 text-uppercase ">mes partenaires</h1>
+        <h1 className="f32 text-uppercase ">mes partenaires</h1>
         <div className="row d-flex flex-wrap my-5">
             {
                 sponsorsData.map((sponsors,idx)=>{
                 return(
-                    <div  key={idx} className='col-md-4 col-sm-2 mb-5 '>
+                    <div  key={idx} className='col-md-4 col-xs-8 mx-auto mb-5 '>
                         <img src={sponsors.imgUrl} alt={sponsors.title} className='w-100 mb-5'/>
                         {
                             data?<div className="sonpsor_details manrope">

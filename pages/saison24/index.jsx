@@ -6,7 +6,6 @@ const Saison24 = () => {
   return (
     <div className="container">
       <Courses liste_courses={saison24} link="#" title="SAISON 2024"/>
-      
     </div>
   );
 };

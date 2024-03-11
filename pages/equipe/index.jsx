@@ -4,6 +4,7 @@ import Carousel from "@/components/equipeComponents/carousel";
 import Endurance from "@/components/equipeComponents/endurance";
 import EquipeHome from "@/components/equipeComponents/equipeHome";
 import KartTeam from "@/components/equipeComponents/kartTeam";
+import ObjectifVertical from "@/components/equipeComponents/objectifVertical";
 import Objectifs from "@/components/equipeComponents/objectives";
 import React from "react";
 
@@ -12,11 +13,13 @@ const index = () => {
     <div>
       <EquipeHome />
       <Objectifs />
+      <ObjectifVertical/>
       <BluePageSeparator
         title="Karting"
         text="Depuis ses débuts, Sachel a participé à la Rok Cup Italia « Junior Rok » en 2021, puis à la catégorie « Super Rok » en 2022, se classant 9e lors de la finale mondiale. En 2023, il a concouru dans la catégorie « Senior Rok », remportant la première place aux 4 heures de Brignoles SWS."
         imgUrl="./karting.png"
         btn={false}
+        Array={["Participation à la Rok Cup Italia « Junior Rok » 2021","Participation à la Rok Cup Italia « Super Rok » 2022 9ème place à la finale mondiale 2022","Participation à la Rok Cup Italia « Super Rok » 2022 9ème place à la finale mondiale 2022"]}
       />
       <KartTeam />
       <InfoSection
@@ -29,7 +32,8 @@ const index = () => {
           "Vice-champion Pure Driving School Endurance en LMP2",
           "Intégration de l’équipe SCUDERIA VOLPE",
         ]}
-        reverse={true}
+        reverse={false}
+       
       />
       <InfoSection
         imgUrl="./auto-circuit.png"
@@ -39,6 +43,7 @@ const index = () => {
           "Training Camp à la Filière Endurance (2023-2024)",
           "Participation au meeting final de la compétition « Mitjet International 2023, sur le circuit Paul Ricard Le Castellet F1 avec l’équipe Event Spirit, 14ème place",
         ]}
+        reverse={true}
       />
       <Endurance />
       <Carousel />
@@ -46,6 +51,7 @@ const index = () => {
         imgUrl="./racer_section.png"
         txt="Sachel bénéficie pleinement du soutien d'une agence de marketing sportif, qui l’accompagne dans la gestion de son image et de ses partenariats. Parallèlement, Sachel est accompagné par les conseils avisés d'un cabinet juridique dédié. Grâce à cette collaboration, ses projets sont soigneusement encadrés par une expertise légale, offrant une assurance juridique indispensable et créant les conditions idéales pour la concrétisation de ses objectifs."
         title="Soutien d’une agence marketing sportive et d’un cabinet juridique"
+        reverse={1}
       />
     </div>
   );

@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const CustomButton = ({text,link,style}) => {
   return (
-    <button className={style}>
+    <button className={`${style}customBtn`}>
       <Link className='nav-link' href={link}>
        {text}
-      </Link>
+      </Link> 
     </button>
   )
 };

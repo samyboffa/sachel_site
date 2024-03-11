@@ -1,5 +1,5 @@
 const sponsorsData = [
-  { imgUrl: "./1.png", 
+  { imgUrl: "./3.png", 
     title:'talliance avocats',
     subTitle:"Cabinet d\'Avocats",
     description:"Fondé en 1980 par trois associés, d'anciens conseils juridiques, le cabinet Maître Christian DELPLANCKE, Maître Jean-Marie POZZO di BORGO et Maître Alain LAGACHE est en constante évolution. Avec 24 avocats, dont 11 associés, et un personnel administratif dévoué, nous sommes une SCP inter-barreaux inscrite à Nice, Grasse et Draguignan.",
@@ -21,7 +21,7 @@ const sponsorsData = [
     fbLink:'',
     youtubeLink:''
   },
-  { imgUrl: "./3.png", 
+  { imgUrl: "./1.png", 
     title:'tendances.sport',
     subTitle:'agence de marketing sportif',
     description:'Implantée à Nice, Tendances.sport, agence marketing sportif multisports au sport, conçoit stratégies gagnantes pour fédérations, athlètes, équipementiers, etc.',

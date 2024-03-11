@@ -2,9 +2,9 @@ import React from "react";
 
 const CheveronTxt = ({ item }) => {
   return (
-    <div className="d-flex idx aic">
-      <span className="text-yellow f32 me-3 d-flex  ">&gt;</span>
-      <p className="chev-txt">{item}</p>
+    <div className="d-flex align-items-center ">
+      <span className="text-yellow f20 me-3 ">&gt;</span>
+      <p className="manrope f18 lh32 fw-600 my-2">{item}</p>
     </div>
   );
 };

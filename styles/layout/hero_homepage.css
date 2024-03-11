@@ -1,11 +1,13 @@
 .hero_container{
-    height: 950px;
+    position: relative;
+}
+.sponsor_hero_img_container{
     background: url('../../public/hero_bcg.png');
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: auto;
-    position: relative;
+    background-size: contain;    
 }
+
 .hero_data{
     padding-top: 5rem;
     width: 45%;
@@ -38,4 +40,13 @@
     letter-spacing: 0em;
     text-align: left;
 
+}
+@media (max-width:992px ) {
+
+    .sponsor_hero_img_container{
+        background: url('../../public/fond_hero_sm.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;   
+    }
 }
