@@ -16,9 +16,9 @@ const Sponsors = ({data}) => {
                         <img src={sponsors.imgUrl} alt={sponsors.title} className='w-100 mb-5'/>
                         {
                             data?<div className="sonpsor_details manrope">
-                            <p className='text-uppercase fw-bolder '>{sponsors.title}</p>
-                            <p>{sponsors.subTitle}</p>
-                            <p>{sponsors.description}</p>
+                            <p className='text-uppercase manrope fw-700 '>{sponsors.title}</p>
+                            <p className='manrope fw-500 op-50'>{sponsors.subTitle}</p>
+                            <p className='manrope fw-500'>{sponsors.description}</p>
                             <div className="sponsors_social_links d-flex gap-2 ">
                                 <a href={sponsors.instaLink}><FontAwesomeIcon className='faIcon' icon={faInstagram}/></a>
                                 <a href={sponsors.linkedInLink}><FontAwesomeIcon className='faIcon' icon={faLinkedin} /></a>

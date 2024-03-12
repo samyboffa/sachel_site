@@ -6,7 +6,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return <div className="footer_container container-fluid text-light text-center d-flex flex-column">
-    <h1 className="termina text-uppercase f24 fw-bold ">Sachel Rotge</h1>
+    <h1 className="termina700 text-uppercase f24  ">Sachel Rotge</h1>
     <ul className="footer_list d-flex flex-wrap p-sm-4 jcc ">
       <li className="nav-item text-uppercase op-70"><Link className="nav-link" href="/">acceuil</Link></li>
       <li className="nav-item text-uppercase op-70"><Link className="nav-link" href="/equipe">l'équipe</Link></li>

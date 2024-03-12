@@ -5,7 +5,7 @@ const KartTeam = () => {
   return (
     <div className="container my-5 ">
       <div className="text-center col-md-8  mx-auto">
-        <h2 className="mx-auto text-uppercase f48 fw-bold mb-5">
+        <h2 className="mx-auto termina600 text-uppercase f32  my-5">
           L'équipe de kart
         </h2>
       </div>

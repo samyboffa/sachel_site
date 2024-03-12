@@ -6,9 +6,7 @@
     margin: 230px 0;
     overflow: visible;
 }
-.data_title{
-    font-family: "Termina", sans-serif;
-}
+
 .data_text{
     font-family: 'Manrope',sans-serif;
     display: flex;

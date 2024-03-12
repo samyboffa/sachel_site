@@ -20,9 +20,12 @@
 .side-bar-div{
     display: none;
 }
+
 @media (max-width:992px)
 {
     .navbar-nav-show{
+        display: flex;
+        justify-content: space-evenly;
         position: absolute;
         height: 100vh;
         left: 0;

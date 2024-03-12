@@ -7,19 +7,19 @@ const Partenariat = () => {
     <div className='container-fluid partenariat p-5'>
         <div className="row ">
             <div className="col-md-7 col-sm-12 text-light partenariat-data">
-                <p className="fw-bold text-uppercase termina f32 lh-base text-light">Partenariat Gagnant</p>
+                <p className=" text-uppercase termina600 f32 lh-48 text-light">Partenariat Gagnant</p>
                 {Array.map((item, idx) => {
                    return <CheveronTxt item={item} key={idx} />;
                  })
                 }
                 <div className="prix d-flex gap-5 my-5">
                     <div>
-                        <span className='text-yellow termina f32 fw-bolder'> 100.000 &euro;</span>
+                        <span className='text-yellow termina f32 fw-700'> 100.000 &euro;</span>
                         <p className='manrope f16 fw-medium'>Prix de la saison</p>
                     </div>
                     <div>
                         <span className='text-yellow termina f32 fw-bolder'>500 &euro;</span>
-                        <p className='manrope f16 fw-medium'>Ticket d'entrée</p>
+                        <p className='manrope f16 fw-600'>Ticket d'entrée</p>
                     </div>
                 </div>
             </div>

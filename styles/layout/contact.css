@@ -7,11 +7,11 @@
     width: 50%;
     z-index: 100;
     overflow-y: auto;
-    padding: 20px;
+    padding: 20px; 
 }
 .active{
     right: 0;
-    transition: right 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 .sidebar-active{
     display: flex;
@@ -26,6 +26,12 @@
 /* .sidebar-container{
     display: none;
 }  */
+/* .bg-trans{
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid red;
+    height: 100vh;
+    width: 100vh;
+} */
 .close-btn{
     display: flex;
     align-items: center;

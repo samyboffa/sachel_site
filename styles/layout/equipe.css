@@ -71,6 +71,9 @@
 .romain{
     width: 100%;
 }
+.borderyellow{
+    border-color: #DFDE10;
+}
 @media (max-width:576px){
     .text-temoignage{
     font-size: 24px;
