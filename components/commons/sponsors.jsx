@@ -26,8 +26,8 @@ const Sponsors = ({data}) => {
                                 <a href={sponsors.fbLink}><FontAwesomeIcon className='faIcon' icon={faSquareFacebook} /></a>
                                 <a href={sponsors.youtubeLink}><FontAwesomeIcon className='faIcon' icon={faYoutube} /></a>
                             </div>
-                            <div className="sponsor_webpage">
-                                <a href={sponsors.weblink}></a>
+                            <div className="sponsor_webpage ">
+                                <a href={`http://${sponsors.weblink}`} target='_blank'>{sponsors.weblink}</a>
                             </div>
                         </div> 
                         :

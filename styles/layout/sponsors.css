@@ -1,19 +1,20 @@
 .sponsor_container{
     position: relative;
 }
-/* .sponsor_hero{
-    display:block;
-}
-.sponsor_hero_inverted{
-    display: none;
-} */
+
 .sponsor_hero_img_container{
     background: url('../../public/hero_bcg.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain; 
 }
-
+.sponsor_webpage a{
+    text-decoration: none;
+    color: #010632;
+    opacity: 50%;
+    margin-top: 16px;
+;
+}
 .sponsor_banner{
     position: absolute;
     bottom: 0;
