@@ -67,7 +67,7 @@ const Header = () => {
               <Link
                 className={
                   router.pathname === ("/saison23" || "./saison24")
-                    ? "dropdown-toggle d-flex fw-700 px-0 active nav-link text-uppercase"
+                    ? "dropdown-toggle d-flex jcc aicfw-700 px-0 active nav-link text-uppercase"
                     : "fw-700 nav-link d-flex jcc aic dropdown-toggle px-0 text-uppercase"
                 }
                 href="#"
@@ -77,7 +77,7 @@ const Header = () => {
                 aria-expanded="false"
               >
                 saisons
-                <span className="material-symbols-outlined ">
+                <span className="material-symbols-outlined d-xs-none d-md-block">
                   keyboard_arrow_down
                 </span>
               </Link>

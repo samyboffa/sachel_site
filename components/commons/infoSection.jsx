@@ -23,7 +23,9 @@ const InfoSection = ({
           {preTitle ? (
             <p className="termina f14 fw-700 text-uppercase">{preTitle}</p>
           ) : null}
-          <h5 className="termina600 f32 text-uppercase mb-3">{title}</h5>
+          <p className="termina600  info_section_title text-uppercase mb-3">
+            {title}
+          </p>
           <p className="marope f16 lh32 fw-500 text-noir mb-3  ">{txt}</p>
           <div className={Array ? "mb-3" : "d-none"}>
             {Array?.map((item, idx) => {

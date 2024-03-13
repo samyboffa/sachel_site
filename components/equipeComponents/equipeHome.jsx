@@ -3,7 +3,7 @@ import React from "react";
 const EquipeHome = () => {
   return (
     <div className="container-fluid equipe_hero marginB-200">
-      <h1 className="text-uppercase termina700 text-md-center text-sm-left my-5 fw-700 f56 lh-sm-base">
+      <h1 className="text-uppercase termina700 text-md-center text-sm-left my-5 fw-700 equipe_title lh-sm-base">
         L'équipe de Sachel Rotge
       </h1>
       <div className="row  ">
@@ -11,10 +11,10 @@ const EquipeHome = () => {
           <img src="./kart.png" alt="karting" className="w-100" />
         </div>
         <div className="col-md-6 col-sm-12">
-          <h2 className="f32 termina600  text-uppercase ">
+          <h2 className="info_section_title my-xs-4 termina600  text-uppercase ">
             Sachel Rotge -
             <br />
-            <span className="f32 text-yellow lh-lg termina600">
+            <span className="info_section_title my-xs-4 text-yellow  termina600">
               Pilote automobile
             </span>
           </h2>

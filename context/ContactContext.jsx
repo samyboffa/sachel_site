@@ -6,6 +6,7 @@ export const ContactProvider = ({ children }) => {
   const [contact, setContact] = useState(false);
   const toggleContact = () => {
     setContact(!contact);
+    document.body.style.overflow = contact ? "auto" : "hidden";
     console.log(contact);
   };
 

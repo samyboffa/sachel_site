@@ -8,7 +8,7 @@ const BluePageSeparator = ({ title, text, imgUrl, btn, Array }) => {
   return (
     <div className="blueSeparator container-fluid ">
       <div className="row d-flex">
-        <div className="data col-md-6 col-sm-12 p-5 text-light ">
+        <div className="data col-md-6 col-sm-12 p-md-5 p-xs-4 text-light ">
           <h5 className="termina600 f32 text-uppercase mb-md-5 mb-sm-4">
             {title}
           </h5>
