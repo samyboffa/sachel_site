@@ -60,22 +60,28 @@ const Header = () => {
                 l'équipe
               </Link>
             </li>
-            <li className="nav-item dropdown">
+            <li
+              className="nav-item seasons-btn dropdown"
+              onClick={() => toggleMenu()}
+            >
               <Link
                 className={
                   router.pathname === ("/saison23" || "./saison24")
-                    ? "dropdown-toggle fw-700 active nav-link text-uppercase"
-                    : "fw-700 nav-link dropdown-toggle text-uppercase"
+                    ? "dropdown-toggle d-flex fw-700 px-0 active nav-link text-uppercase"
+                    : "fw-700 nav-link d-flex jcc aic dropdown-toggle px-0 text-uppercase"
                 }
                 href="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                onClick={() => toggleMenu()}
               >
                 saisons
+                <span className="material-symbols-outlined ">
+                  keyboard_arrow_down
+                </span>
               </Link>
+
               <ul
                 className={
                   showDrop
@@ -137,7 +143,8 @@ const Header = () => {
         <div className="menu">
           <img src="./menu.png" alt="menu" onClick={toggleSmMenu} />
         </div>
-        {contact ? <Contact contact={contact} toggle={toggleContact} /> : null}
+        <Contact contact={contact} toggle={toggleContact} />
+        {contact && <div className="black_layer"></div>}
       </div>
     </nav>
   );
