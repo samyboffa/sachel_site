@@ -19,6 +19,12 @@ body{
 .text-noir{
   color: #010632;
 }
+.border-noir{
+  border:1px solid #010632;
+}
+.border-yellow{
+  border:1px solid #DFDE10;
+}
 .bg-yellow{
   background-color: #DFDE10;
 }
@@ -31,7 +37,7 @@ body{
 .rock-salt{
   font-family: "Rock Salt";
 }
-.archivo{
+.archivo-font{
   font-family: "Archivo";
 }
 .manrope{

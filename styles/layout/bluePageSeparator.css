@@ -24,7 +24,8 @@
 }
 @media (max-width:992px){
     .separator_img{
-    object-fit: contain;
+    object-fit: cover;
+    height: 100%;
     }
     .blueSeparator{
     margin: 100px 0;

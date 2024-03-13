@@ -37,9 +37,9 @@ const Contact = ({contact,toggle}) => {
 });
   return (
     
-    <div className={contact? "sidebar-active":"sidebar-container"}>  
+    <div className={contact? "sidebar-active":nul}> 
         <div className={contact? "contact-form active":"contact-form"}>
-            <div className="d-flex aic archivo">
+            <div className="d-flex align-items-center archivo-font">
                 <button className="close-btn" onClick={toggle}>&#129064;</button>
                 <h1 className="archivo f24">Contact</h1>
             </div>          
@@ -65,6 +65,7 @@ const Contact = ({contact,toggle}) => {
                         <PhoneInput
                         defaultCountry="FR"
                         placeholder="Enter phone number"
+                        className='flag-phone'
                         value={formik.values.phoneNumber}
                         onChange={(value) => formik.setFieldValue('phoneNumber', value)}/>
                     </div>
@@ -92,6 +93,7 @@ const Contact = ({contact,toggle}) => {
             </form>
             
         </div>
+        
     </div> 
        
     
@@ -99,56 +101,3 @@ const Contact = ({contact,toggle}) => {
 }
 
 export default Contact
-
-
-{/* <div>
-                    <div className='row'>
-                        <div className="half">
-                            <label htmlFor="prenom">Nom et Prénom</label>
-                            <input type="text" name="prenom" id="" placeholder='Nom & Prénom' onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.prenom} />
-                        </div>
-                        <div className="half">
-                            <label htmlFor="nom">Nom</label>
-                            <input type="text" name="nom" id="" placeholder='Nom' onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.nom}/>
-                        </div>       
-                    </div>
-                </div>
-                <div >
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="" placeholder='Email' onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                        value={formik.values.email}/>
-                </div>
-                <div >
-                    <label htmlFor="phone">Téléphone</label>
-                    <input type="number" name="phone" id="" placeholder='Numéro de téléphone'onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                        value={formik.values.phone}/>
-                </div>
-                < div >
-                    <div className="row">
-                        <div className="half">
-                            <label htmlFor="participants">Participants</label>
-                            <input type="text" name="participants" id="" placeholder='Participant'onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.participants}/>
-                        </div>
-                        <div className="half">
-                            <label htmlFor="date">Date</label>
-                            <input type="date" name="date" id="" onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.date} />
-                        </div>
-                          
-                    </div>
-                </div>
-                <div>
-                    <label htmlFor="msg">Message</label>
-                    <textarea name="msg" id="" cols="30" rows="10" placeholder='Décrivez votre demande'onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                        value={formik.values.msg}></textarea>
-                </div> */}

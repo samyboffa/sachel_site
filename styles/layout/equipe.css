@@ -2,6 +2,9 @@
     font-family: "Termina",sans-serif;
     height: auto;
 }
+.equipe_hero_text{
+    padding-right: 108px;
+}
 
 .sachel-sign{
     font-family: "Smooch";
@@ -27,7 +30,7 @@
     display: none;
 }
 .line_vertical{
-    height: 90%;
+    height: 86%;
     width: 1px;
     border: 2px solid #010632;
     opacity: 0.2;
@@ -88,5 +91,8 @@
     }
     .horizontal_objectif{
         display: none;  
+    }
+    .equipe_hero_text{
+    padding-right: 24px;
     }
 }

@@ -7,7 +7,7 @@ const ContactContext = createContext();
 export const ContactProvider = ({ children }) => {
    const [contact,setContact]=useState(false);
    const toggleContact = ()=>{
-     setContact(!contact)
+    setContact(!contact)
   }
 
   return (

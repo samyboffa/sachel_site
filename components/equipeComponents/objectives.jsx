@@ -3,7 +3,7 @@ import BluePageSeparator from "../commons/bluePageSeparator";
 
 const Objectifs = () => {
   return (
-    <div className="container my-5 horizontal_objectif">
+    <div className="container marginB-200 horizontal_objectif">
       <p className="termina600 f32 text-center text-uppercase my-5">mes objectifs</p>
       <div className=" row d-flex aic jcc w-75 mx-auto mb-4">
         <span className="circle border border-yellow d-flex aic jcc p-0 m-0 rounded-circle ">

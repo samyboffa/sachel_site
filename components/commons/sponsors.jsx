@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Sponsors = ({data}) => {
   return (
-    <div className="container my-5 text-center">
-        <h1 className="f32 text-uppercase ">mes partenaires</h1>
+    <div className="container marginB-200 text-center">
+        <h1 className="f32 text-uppercase termina600 ">mes partenaires</h1>
         <div className="row d-flex flex-wrap my-5">
             {
                 sponsorsData.map((sponsors,idx)=>{

@@ -4,12 +4,12 @@ const CourseItem = ({ idx, course }) => {
   return (
     <div
       className={`container d-flex justify-content-center ${
-        idx % 2 == 0 ? "flex-row":"flex-row-reverse"
+        idx % 2 == 0 ? "flex-row" : "flex-row-reverse"
       }`}
     >
       <div className="col-md-5 "></div>
       <div className="position-relative d-md-flex d-sm-none">
-        <div className="number text-center d-flex aic jcc  fw-bold f24 bg-noir text-light">
+        <div className="number text-center d-flex aic jcc  termina700 f24 bg-noir text-light">
           {idx + 1}
         </div>
         <div className="separator"></div>

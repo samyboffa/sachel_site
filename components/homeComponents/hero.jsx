@@ -5,7 +5,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <div className='container-fluid hero_container'>
-      <div className="row d-flex">
+      <div className="row d-flex marginB-200">
         <div className="col-md-6 col-sm-12 p-md-5 text-noir ">
               <h1 className="f56 my-sm-4 text-uppercase termina700 lh-sm-base">Sachel RotgE</h1>
               <h3 className="f32 text-yellow my-sm-3 text-uppercase termina600 lh-sm">Pilote AUTOMOBILE</h3>
