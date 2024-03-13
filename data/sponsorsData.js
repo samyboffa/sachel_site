@@ -47,7 +47,7 @@ const sponsorsData = [
     title:'benjaminpratt monaco',
     subTitle:'Agence immobilière',
     description:'Doté des outils de gestion, de communication et de marketing les plus innovants, le Groupe BENJAMINPRATT vous propose un service personnalisé pour la vente ou l\'acquisition de votre bien immobilier dans le plus strict respect de vos intérêts.',
-    weblink:'https://www.benjaminpratt.com/fr/',
+    weblink:'www.benjaminpratt.com/fr/',
     instaLink:'',
     linkedInLink:'',
     tiktokLink:'',

@@ -5,6 +5,7 @@
 
 
 
+
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +13,18 @@
 }
 body{
   background-color: #EDF0F3;
-
 }
 .bg-noir{
   background-color: #010632;
 }
 .text-noir{
   color: #010632;
+}
+.border-noir{
+  border:1px solid #010632;
+}
+.border-yellow{
+  border:1px solid #DFDE10;
 }
 .bg-yellow{
   background-color: #DFDE10;
@@ -32,8 +38,20 @@ body{
 .rock-salt{
   font-family: "Rock Salt";
 }
-.archivo{
+.archivo-font{
   font-family: "Archivo";
+}
+.manrope{
+  font-family: "Manrope";
+}
+.termina700{
+  font-family: "Termina-Bold", sans-serif;
+}
+.termina600{
+  font-family: "Termina-Demi", sans-serif;
+}
+.termina500{
+  font-family: "Termina-Medium", sans-serif;
 }
 .f14{
   font-size: 14px;
@@ -104,12 +122,7 @@ ul{
   margin: 0 ;
   padding: 0 ;
 }
-.manrope{
-  font-family: "Manrope";
-}
-.termina{
-  font-family: "Termina", sans-serif;
-}
+
 .lh-48{
   line-height: 48px;
 }
@@ -152,4 +165,5 @@ h1{
 @import url(./layout/saisons.css);
 @import url(./layout/sponsors.css);
 @import url(./layout/contact.css);
+@import url(./Termina.css);
 

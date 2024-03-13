@@ -2,7 +2,12 @@
     font-family: "Termina",sans-serif;
     height: auto;
 }
-
+.equipe_hero_text{
+    padding-right: 108px;
+}
+.equipe_title{
+    font-size: 56px;
+}
 .sachel-sign{
     font-family: "Smooch";
     font-size: 40px;
@@ -27,7 +32,7 @@
     display: none;
 }
 .line_vertical{
-    height: 90%;
+    height: 86%;
     width: 1px;
     border: 2px solid #010632;
     opacity: 0.2;
@@ -71,11 +76,16 @@
 .romain{
     width: 100%;
 }
+.borderyellow{
+    border-color: #DFDE10;
+}
 @media (max-width:576px){
     .text-temoignage{
     font-size: 24px;
     }
-   
+   .equipe_title{
+    font-size: 32px;
+}
 }
 @media (max-width:992px){
     
@@ -85,5 +95,8 @@
     }
     .horizontal_objectif{
         display: none;  
+    }
+    .equipe_hero_text{
+    padding-right: 24px;
     }
 }

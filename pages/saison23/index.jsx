@@ -13,13 +13,13 @@ const Saison23 = () => {
       <div className="saison23_section3 container  mx-auto row d-flex jcsb my-5">
         <div className="img_container_s23_sec3 d-xs-none d-md-block col-md-9 px-0"><img src="./multijet.png" alt="multijet" className="" /></div>
         <div className="col-md-3 col-xs-12">
-          <h4 className="text-uppercase fw-700 lh-24 f14 text-noir termina se3_preTitle">mon auto lors du meeting du 6 au 8 octobre 2023 sur le circuit:</h4>
-          <h6 className="text-uppercase fw-600 f32 text-noir termina  my-5 sec3_title">paul ricard le castellet f1</h6>
+          <h4 className="text-uppercase  lh-24 f14 text-noir termina700 ">mon auto lors du meeting du 6 au 8 octobre 2023 sur le circuit:</h4>
+          <h6 className="text-uppercase f32 text-noir termina600  my-5">paul ricard le castellet f1</h6>
           <img src="./multijet.png" alt="multijet" className="d-xs-block w-100 d-md-none" />
           <div className="multi_details">
-            <p className="power termina f56 fw-bold lh-lg">230 cv</p>
+            <p className="power termina700 f56 lh-lg">230 cv</p>
             <div className="power-separator mx-auto "></div>
-            <p className="termina f56 fw-bold lh-lg text-noir">750 kg</p>
+            <p className="termina700 f56 lh-lg text-noir">750 kg</p>
           </div>
           {Array.map((item, idx) => {
             return <CheveronTxt item={item} key={idx} />;

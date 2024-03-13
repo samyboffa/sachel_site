@@ -13,13 +13,17 @@ const index = () => {
     <div>
       <EquipeHome />
       <Objectifs />
-      <ObjectifVertical/>
+      <ObjectifVertical />
       <BluePageSeparator
         title="Karting"
         text="Depuis ses débuts, Sachel a participé à la Rok Cup Italia « Junior Rok » en 2021, puis à la catégorie « Super Rok » en 2022, se classant 9e lors de la finale mondiale. En 2023, il a concouru dans la catégorie « Senior Rok », remportant la première place aux 4 heures de Brignoles SWS."
         imgUrl="./karting.png"
         btn={false}
-        Array={["Participation à la Rok Cup Italia « Junior Rok » 2021","Participation à la Rok Cup Italia « Super Rok » 2022 9ème place à la finale mondiale 2022","Participation à la Rok Cup Italia « Super Rok » 2022 9ème place à la finale mondiale 2022"]}
+        Array={[
+          "Participation à la Rok Cup Italia « Junior Rok » 2021",
+          "Participation à la Rok Cup Italia « Super Rok » 2022 9ème place à la finale mondiale 2022",
+          "Participation à la Rok Cup Italia « Super Rok » 2022 9ème place à la finale mondiale 2022",
+        ]}
       />
       <KartTeam />
       <InfoSection
@@ -33,7 +37,6 @@ const index = () => {
           "Intégration de l’équipe SCUDERIA VOLPE",
         ]}
         reverse={false}
-       
       />
       <InfoSection
         imgUrl="./auto-circuit.png"

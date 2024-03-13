@@ -3,7 +3,7 @@ import temoignage from "@/data/temoignage";
 
 const Carousel = () => {
   return (
-    <div className="container-fluid carousel-section p-3 my-5">
+    <div className="container-fluid carousel-section p-3 marginB-200">
       <div
         id="carouselExampleControls"
         class="carousel slide h-100"
