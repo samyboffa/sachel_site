@@ -24,8 +24,14 @@ const Contact = ({ contact, toggle }) => {
       if (!values.prenom) {
         errors.prenom = "Name required";
       }
+      if (values.prenom.length < 5) {
+        errors.prenom = "Name must be more than 5 characters";
+      }
       if (!values.phoneNumber) {
         errors.phoneNumber = "Phone number is required";
+      }
+      if (!values.msg || values.msg.length < 20) {
+        errors.msg = "Message must be 20 characters at least";
       }
       return errors;
     },
@@ -60,6 +66,9 @@ const Contact = ({ contact, toggle }) => {
               onBlur={formik.handleBlur}
               value={formik.values.prenom}
             />
+            {formik.touched.prenom && formik.errors.prenom ? (
+              <div className="error-message">{formik.errors.prenom}</div>
+            ) : null}
           </div>
           <div className="col-md-6 d-flex flex-column">
             <label
@@ -78,6 +87,9 @@ const Contact = ({ contact, toggle }) => {
               onBlur={formik.handleBlur}
               value={formik.values.email}
             />
+            {formik.touched.email && formik.errors.email ? (
+              <div className="error-message">{formik.errors.email}</div>
+            ) : null}
           </div>
         </div>
         <div className="row d-flex flex-md-row flex-sm-column my-5">
@@ -95,6 +107,9 @@ const Contact = ({ contact, toggle }) => {
               value={formik.values.phoneNumber}
               onChange={(value) => formik.setFieldValue("phoneNumber", value)}
             />
+            {formik.errors.phoneNumber ? (
+              <div className="error-message">{formik.errors.phoneNumber}</div>
+            ) : null}
           </div>
           <div className="col-md-6 d-flex flex-column">
             <label
@@ -137,6 +152,9 @@ const Contact = ({ contact, toggle }) => {
             onBlur={formik.handleBlur}
             value={formik.values.msg}
           ></textarea>
+          {formik.touched.msg && formik.errors.msg ? (
+            <div className="error-message">{formik.errors.msg}</div>
+          ) : null}
         </div>
 
         <div className="d-flex justify-content-end my-5">
