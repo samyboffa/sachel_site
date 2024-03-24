@@ -1,5 +1,7 @@
 import BluePageSeparator from "@/components/commons/bluePageSeparator";
 import InfoSection from "@/components/commons/infoSection";
+import temoignage from "@/data/temoignage";
+
 import Carousel from "@/components/equipeComponents/carousel";
 import Endurance from "@/components/equipeComponents/endurance";
 import EquipeHome from "@/components/equipeComponents/equipeHome";
@@ -7,6 +9,7 @@ import KartTeam from "@/components/equipeComponents/kartTeam";
 import ObjectifVertical from "@/components/equipeComponents/objectifVertical";
 import Objectifs from "@/components/equipeComponents/objectives";
 import React from "react";
+import Caroussel from "@/components/equipeComponents/Caroussel";
 
 const index = () => {
   return (
@@ -49,7 +52,7 @@ const index = () => {
         reverse={true}
       />
       <Endurance />
-      <Carousel />
+      <Caroussel items={temoignage} />
       <InfoSection
         imgUrl="./racer_section.png"
         txt="Sachel bénéficie pleinement du soutien d'une agence de marketing sportif, qui l’accompagne dans la gestion de son image et de ses partenariats. Parallèlement, Sachel est accompagné par les conseils avisés d'un cabinet juridique dédié. Grâce à cette collaboration, ses projets sont soigneusement encadrés par une expertise légale, offrant une assurance juridique indispensable et créant les conditions idéales pour la concrétisation de ses objectifs."

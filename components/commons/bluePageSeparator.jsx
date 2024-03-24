@@ -3,7 +3,7 @@ import CustomButton from "./CustomButton";
 import CheveronTxt from "./cheveronTxt";
 import { useRouter } from "next/router";
 
-const BluePageSeparator = ({ title, text, imgUrl, btn, Array }) => {
+const BluePageSeparator = ({ title, text, imgUrl, btn, Array, link }) => {
   const router = useRouter();
   return (
     <div className="blueSeparator container-fluid ">
@@ -17,7 +17,7 @@ const BluePageSeparator = ({ title, text, imgUrl, btn, Array }) => {
             <CustomButton
               style="bg-yellow text-center"
               text="EN SAVOIR PLUS"
-              link="#"
+              link={link}
             />
           ) : (
             ""

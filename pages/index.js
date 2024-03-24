@@ -20,8 +20,16 @@ export default function Home() {
         text="La saison 2024 sera cruciale pour Sachel ! Cette année marquera ses essais en Formule 4, Ligier JS2R, GT, et son immersion dans l'aventure Feed Racing F4. Attendez-vous à des moments palpitants sur les circuits, où il repoussera les limites de la vitesse et de la précision. Suivez son ascension, mêlant compétitions réelles et virtuelles, pour une saison exceptionnelle pleine de nouveaux défis et de succès."
         imgUrl="./home_sep_img.png"
         btn={true}
+        link="/saison24"
       />
-      <Stats num1="3" num2="+80" num3="4 ans" txt1="Championnats : Essais en course d’endurance, Karting & Sim racing" txt2="Courses réalisées" txt3="D’expérience dans le karting"/>
+      <Stats
+        num1="3"
+        num2="+80"
+        num3="4 ans"
+        txt1="Championnats : Essais en course d’endurance, Karting & Sim racing"
+        txt2="Courses réalisées"
+        txt3="D’expérience dans le karting"
+      />
       <InfoSection
         imgUrl="./endurance.png"
         preTitle="Unissons nos forces sur les circuits prestigieux"

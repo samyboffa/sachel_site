@@ -60,18 +60,40 @@
     text-align: left;
 
 }
-.carousel-section{
+.cursor-pointer{
+    cursor: pointer;
+}
+.carousel{
     background: linear-gradient(155.76deg, #011F5D 2.03%, #0F2949 87.24%);
+    margin-bottom: 200px;
+    height:auto;
+    color: black;
+    width: 100%;
+    min-height: 600px;
 }
 .temoignage-titre{
     line-height: 24px;
 }
 .text-temoignage{
-    font-family: "Termina",sans-serif;
-    font-size: 32px;
+    color: white;
+    line-height: 48px;
 }
 .temoignage-auteur{
-    font-family: "Termina", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(237, 240, 243, 0.6); 
+}
+.activeindicator{
+    background-color: #DFDE10;
+}
+.indicator{
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+}
+.carousel-control-prev, .carousel-control-next{
+    text-decoration: none;
+    font-size: 24px;
 }
 .romain{
     width: 100%;
