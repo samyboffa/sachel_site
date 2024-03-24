@@ -2,7 +2,6 @@ import BluePageSeparator from "@/components/commons/bluePageSeparator";
 import InfoSection from "@/components/commons/infoSection";
 import temoignage from "@/data/temoignage";
 
-import Carousel from "@/components/equipeComponents/carousel";
 import Endurance from "@/components/equipeComponents/endurance";
 import EquipeHome from "@/components/equipeComponents/equipeHome";
 import KartTeam from "@/components/equipeComponents/kartTeam";
