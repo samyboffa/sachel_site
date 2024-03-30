@@ -12,7 +12,7 @@ const index = () => {
   return (
     <div>
       <SponsorsHero />
-      <Sponsors data={true} />
+      <Sponsors data={true} width="col-md-6" />
       <Partenariat />
       <InfoSection
         imgUrl="./partenariat_section_4.png"

@@ -4,7 +4,18 @@
     background-size:cover;
     background-position:  center;
     margin: 230px 0;
-    overflow: visible;
+
+}
+.gap-100{
+    gap: 100px;
+}
+.paddingX100{
+    padding: 70px 100px;
+}
+.image-div{
+    position: absolute;
+    right: 2%;
+    top: -17%;
 }
 
 .data_text{
@@ -30,4 +41,7 @@
     .blueSeparator{
     margin: 100px 0;
 }
+    .image-div{
+        position:static;
+    }
 }

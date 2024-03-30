@@ -17,9 +17,16 @@ const Header = () => {
   const { contact, toggleContact } = useContext(ContactContext);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container d-flex jcsb">
-        <Link className="navbar-brand  f24 termina700" href="/">
+    <nav className="navbar  navbar-expand-lg bg-body-tertiary">
+      <div
+        className={showDrop ? "test d-block" : "d-none"}
+        onClick={() => setShowDrop(false)}
+      ></div>
+      <div className="d-flex container p-md-0   w-100 justify-content-between">
+        <Link
+          className="navbar-brand f24 termina700 text-uppercase text-noir"
+          href="/"
+        >
           Sachel Rotge
         </Link>
         <ul
@@ -37,13 +44,13 @@ const Header = () => {
               className={
                 router.pathname === "/"
                   ? "manrope active nav-link fw-700 text-uppercase"
-                  : "nav-link fw-700 text-uppercase"
+                  : "nav-link fw-700 op-50 text-uppercase"
               }
               aria-current="page"
               href="/"
               onClick={toggleSmMenu}
             >
-              acceuil
+              accueil
             </Link>
           </li>
           <li className="nav-item">
@@ -51,7 +58,7 @@ const Header = () => {
               className={
                 router.pathname === "/equipe"
                   ? "fw-700 active nav-link text-uppercase"
-                  : "fw-700 nav-link text-uppercase"
+                  : "fw-700 nav-link op-50 text-uppercase"
               }
               href="/equipe"
               onClick={toggleSmMenu}
@@ -59,15 +66,12 @@ const Header = () => {
               l'équipe
             </Link>
           </li>
-          <li
-            className="nav-item seasons-btn dropdown"
-            onClick={() => toggleMenu()}
-          >
+          <li className="nav-item dropdown" onClick={() => toggleMenu()}>
             <Link
               className={
                 router.pathname === ("/saison23" || "./saison24")
-                  ? "dropdown-toggle d-flex jcc aicfw-700 px-0 active nav-link text-uppercase"
-                  : "fw-700 nav-link d-flex jcc aic dropdown-toggle px-0 text-uppercase"
+                  ? "dropdown-toggle d-flex justify-content-center align-items-center manrope fw-700 px-0 active nav-link text-uppercase"
+                  : "fw-700 manrope nav-link op-50 d-flex justify-content-center align-items-center dropdown-toggle px-0 text-uppercase"
               }
               href="#"
               id="navbarDropdown"
@@ -84,14 +88,14 @@ const Header = () => {
             <ul
               className={
                 showDrop
-                  ? "dropdown-menu d-block border-0 p-2 drop-menu text-center"
+                  ? "dropdown-menu  d-block border-0 p-2 drop-menu text-center"
                   : "dropdown-menu"
               }
               aria-labelledby="navbarDropdown"
             >
               <li>
                 <Link
-                  class="dropdown-item hover fw-700 nav-link text-uppercase"
+                  className="dropdown-item hover fw-700 nav-link text-uppercase"
                   href="/saison23"
                   onClick={() => {
                     toggleMenu();
@@ -120,7 +124,7 @@ const Header = () => {
               className={
                 router.pathname === "/sponsors"
                   ? "active fw-700 nav-link text-uppercase"
-                  : "nav-link fw-700 text-uppercase"
+                  : "nav-link fw-700 op-50 text-uppercase"
               }
               href="/sponsors"
             >

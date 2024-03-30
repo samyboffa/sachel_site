@@ -10,14 +10,16 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DevenirSponsor from "./DevenirSponsor";
 
-const Sponsors = ({ data }) => {
+const Sponsors = ({ data, width }) => {
   return (
     <div className="container marginB-200 text-center">
-      <h1 className="f32 text-uppercase termina600 ">mes partenaires</h1>
+      <p className="f32 text-uppercase termina600 margin-bottom-104 ">
+        mes partenaires
+      </p>
       <div className="row d-flex flex-wrap my-5">
         {sponsorsData.map((sponsors, idx) => {
           return (
-            <div key={idx} className="col-md-4 col-xs-8 mx-auto mb-5 ">
+            <div key={idx} className={`${width} col-xs-12 mb-5 mx-auto`}>
               <img
                 src={sponsors.imgUrl}
                 alt={sponsors.title}

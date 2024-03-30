@@ -1,7 +1,20 @@
 .sponsor_container{
     position: relative;
+    height: 950px;
+    margin-bottom: 200px;
 }
-
+.image{
+    text-align: right; 
+   
+}
+.img-sponsor{
+    object-fit: cover;
+    object-position: right bottom;
+}
+.text_sponsor{
+   padding-left: 100px;
+   position: absolute;
+}
 .sponsor_hero_img_container{
     background: url('../../public/hero_bcg.png');
     background-repeat: no-repeat;

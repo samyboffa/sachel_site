@@ -1,6 +1,6 @@
 const sponsorsData = [
   {
-    imgUrl: "./3.png",
+    imgUrl: "./partenaires/talliance_avocats.svg",
     title: "talliance avocats",
     subTitle: "Cabinet d'Avocats",
     description:
@@ -13,7 +13,7 @@ const sponsorsData = [
     youtubeLink: "",
   },
   {
-    imgUrl: "./4.png",
+    imgUrl: "./partenaires/one_team.svg",
     title: "one team",
     subTitle: "secteur de l'entreprise",
     description:
@@ -26,7 +26,7 @@ const sponsorsData = [
     youtubeLink: "",
   },
   {
-    imgUrl: "./1.png",
+    imgUrl: "./partenaires/tendance_sport.svg",
     title: "tendances.sport",
     subTitle: "agence de marketing sportif",
     description:
@@ -39,7 +39,7 @@ const sponsorsData = [
     youtubeLink: "",
   },
   {
-    imgUrl: "./2.png",
+    imgUrl: "./partenaires/monaco_kart.svg",
     title: "monaco kart",
     subTitle: "Championnat d'ekarting de Monaco",
     description:
@@ -52,7 +52,7 @@ const sponsorsData = [
     youtubeLink: "",
   },
   {
-    imgUrl: "./5.png",
+    imgUrl: "./partenaires/pratt.svg",
     title: "benjaminpratt monaco",
     subTitle: "Agence immobilière",
     description:

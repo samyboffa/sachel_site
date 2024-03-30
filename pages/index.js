@@ -14,6 +14,7 @@ export default function Home() {
         txt="Depuis son plus jeune âge, sa passion pour la course et l'automobile a été le moteur de son ambition sans limites. À seulement 17 ans, Sachel possède déjà une expérience de pilotage impressionnante et ses objectifs à court terme sont audacieux et reflètent son état d'esprit conquérant."
         btnTxt="en savoir plus"
         reverse={1}
+        style="mt-150"
       />
       <BluePageSeparator
         title="saison 2024"
@@ -38,7 +39,7 @@ export default function Home() {
         btnTxt=""
         reverse={1}
       />
-      <Sponsors data={false} />
+      <Sponsors data={false} width="col-md-3" />
     </>
   );
 }

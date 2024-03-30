@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import ContactContext from "@/context/ContactContext";
+import { Heart } from "lucide-react";
 
 const Footer = () => {
   const { contact, toggleContact } = useContext(ContactContext);
@@ -22,14 +23,10 @@ const Footer = () => {
         </li>
         <li className="nav-item text-uppercase op-70">
           <Link className="nav-link" href="/saison24">
-            saisons 2024
+            saisons
           </Link>
         </li>
-        <li className="nav-item text-uppercase op-70">
-          <Link className="nav-link" href="/saison23">
-            saisons 2023
-          </Link>
-        </li>
+
         <li className="nav-item text-uppercase op-70">
           <Link className="nav-link" href="/sponsors">
             sponsors
@@ -49,10 +46,20 @@ const Footer = () => {
       <Link className="nav-link" href="/">
         <FontAwesomeIcon icon={faInstagram} />
       </Link>
-      <h6 className="col-md-6 m-auto f14 fw-bolder manrope op-50">
-        Développé avec <span className="heart">♥</span> par Tendances.Group ©
-        2023. Tous droits réservés.
-      </h6>
+      <p className="col-md-6 m-auto f14 fw-500 lh-24 manrope op-50">
+        Développé avec
+        <span style={{ verticalAlign: "bottom" }}>
+          <Heart fill="red" size={30} strokeWidth={0} />
+        </span>
+        par
+        <Link
+          href="https://tendances.group/"
+          className="d-inline ms-1 nav-link f14 fw-500 lh-24 manrope "
+        >
+          Tendances.Group
+        </Link>
+        <br /> © 2024. Tous droits réservés.
+      </p>
     </div>
   );
 };

@@ -12,13 +12,26 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #EDF0F3;
+  background: rgba(237, 240, 243, 1);
+  padding-top: 72px; 
+}
+.margin-bottom-104{
+  margin-bottom: 104px;
 }
 .bg-noir{
   background-color: #010632;
 }
 .text-noir{
-  color: #010632;
+  color: rgba(1, 6, 50, 1);
+
+}
+.text-grey{
+  color: rgba(237, 240, 243, 1);
+;
+}
+.active{
+  color: rgba(1, 6, 50, 1)  !important;
+
 }
 .border-noir{
   border:1px solid #010632;
@@ -28,6 +41,9 @@ body{
 }
 .bg-yellow{
   background-color: #DFDE10;
+}
+.bg-white{
+  background-color: white;
 }
 .text-yellow{
   color: #DFDE10;

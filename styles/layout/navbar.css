@@ -2,6 +2,26 @@
     font-family: 'Manrope';
     font-weight: 700;
 }
+.navbar{
+    height: 72px; 
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.test{
+    position: absolute;
+    background-color:rgb(0,0,0,0.5);
+    width: 100vw;
+    height: 500vh;
+    top: 72px;
+    left: 0;
+    z-index: 0;
+    
+
+}
 .black_layer{
     position: absolute;
     top: 0;
@@ -14,12 +34,13 @@
 .dropdown-toggle::after {
     display: none !important;
 }
-.seasons-btn{
+/* .seasons-btn{
     cursor: pointer;
-}
+} */
 .drop-menu{
     box-shadow: 0px 4px 50px 0px #0000001F;
     border-radius: 2px;
+    z-index: 3;
 }
 .hover:hover{
     background: rgba(1, 6, 50, 0.12);
@@ -45,7 +66,7 @@
         height: 100vh;
         left: 0;
         top: 0;
-        width: 100vw;
+        width: 100%;
         text-align: center;
         font-size: 32px;
         padding:50px ;
