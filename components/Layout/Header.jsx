@@ -18,122 +18,122 @@ const Header = () => {
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container d-flex jcsb">
-        <Link className="navbar-brand  f24 termina700" href="/">
-          Sachel Rotge
-        </Link>
-        <div className="" id="navbarSupportedContent">
-          <ul
-            className={
-              showMenu
-                ? "navbar-nav-show navbar-nav gap-3 mb-2 mb-lg-0"
-                : "navbar-nav-hide navbar-nav gap-3 mb-2 mb-lg-0"
-            }
+      <div
+        className={showDrop ? "black_transparent_background d-block" : "d-none"}
+        onClick={() => setShowDrop(false)}
+      ></div>
+      <div className=" container">
+        <div className="nav-title">
+          <Link
+            className="navbar-brand f24 termina700 text-uppercase text-noir"
+            href="/"
           >
-            <li className="nav-item">
-              <button className="menu-close-btn" onClick={toggleSmMenu}>
-                X
-              </button>
-              <Link
-                className={
-                  router.pathname === "/"
-                    ? "manrope active nav-link fw-700 text-uppercase"
-                    : "nav-link fw-700 text-uppercase"
-                }
-                aria-current="page"
-                href="/"
-                onClick={toggleSmMenu}
-              >
-                acceuil
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className={
-                  router.pathname === "/equipe"
-                    ? "fw-700 active nav-link text-uppercase"
-                    : "fw-700 nav-link text-uppercase"
-                }
-                href="/equipe"
-                onClick={toggleSmMenu}
-              >
-                l'équipe
-              </Link>
-            </li>
-            <li
-              className="nav-item seasons-btn dropdown"
-              onClick={() => toggleMenu()}
-            >
-              <Link
-                className={
-                  router.pathname === ("/saison23" || "./saison24")
-                    ? "dropdown-toggle d-flex jcc aicfw-700 px-0 active nav-link text-uppercase"
-                    : "fw-700 nav-link d-flex jcc aic dropdown-toggle px-0 text-uppercase"
-                }
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                saisons
-                <span className="material-symbols-outlined d-xs-none d-md-block">
-                  keyboard_arrow_down
-                </span>
-              </Link>
-
-              <ul
-                className={
-                  showDrop
-                    ? "dropdown-menu d-block border-0 p-2 drop-menu text-center"
-                    : "dropdown-menu"
-                }
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <Link
-                    class="dropdown-item hover fw-700 nav-link text-uppercase"
-                    href="/saison23"
-                    onClick={() => {
-                      toggleMenu();
-                      toggleSmMenu();
-                    }}
-                  >
-                    saison 2023
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item fw-700 hover nav-link text-uppercase"
-                    href="/saison24"
-                    onClick={() => {
-                      toggleMenu();
-                      toggleSmMenu();
-                    }}
-                  >
-                    saison 2024
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <Link
-                className={
-                  router.pathname === "/sponsors"
-                    ? "active fw-700 nav-link text-uppercase"
-                    : "nav-link fw-700 text-uppercase"
-                }
-                href="/sponsors"
-                onClick={() => {
-                  toggleMenu();
-                  toggleSmMenu();
-                }}
-              >
-                sponsors
-              </Link>
-            </li>
-          </ul>
+            Sachel Rotge
+          </Link>
         </div>
+        <ul
+          className={
+            showMenu
+              ? "navbar-nav-show navbar-nav gap-3 mb-2 mb-lg-0"
+              : "navbar-nav-hide navbar-nav gap-3 mb-2 mb-lg-0"
+          }
+        >
+          <li className="nav-item">
+            <button className="menu-close-btn" onClick={toggleSmMenu}>
+              X
+            </button>
+            <Link
+              className={
+                router.pathname === "/"
+                  ? "manrope active nav-link fw-700 text-uppercase"
+                  : "nav-link fw-700 op-50 text-uppercase"
+              }
+              aria-current="page"
+              href="/"
+              onClick={toggleSmMenu}
+            >
+              accueil
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className={
+                router.pathname === "/equipe"
+                  ? "fw-700 active nav-link text-uppercase"
+                  : "fw-700 nav-link op-50 text-uppercase"
+              }
+              href="/equipe"
+              onClick={toggleSmMenu}
+            >
+              l'équipe
+            </Link>
+          </li>
+          <li className="nav-item dropdown" onClick={() => toggleMenu()}>
+            <Link
+              className={
+                router.pathname === ("/saison23" || "./saison24")
+                  ? "dropdown-toggle d-flex justify-content-center align-items-center manrope fw-700 px-0 active nav-link text-uppercase"
+                  : "fw-700 manrope nav-link op-50 d-flex justify-content-center align-items-center dropdown-toggle px-0 text-uppercase"
+              }
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              saisons
+              <span className="material-symbols-outlined d-xs-none d-md-block">
+                keyboard_arrow_down
+              </span>
+            </Link>
+
+            <ul
+              className={
+                showDrop
+                  ? "dropdown-menu  d-block border-0 p-2 drop-menu text-center"
+                  : "dropdown-menu"
+              }
+              aria-labelledby="navbarDropdown"
+            >
+              <li>
+                <Link
+                  className="dropdown-item hover fw-700 nav-link text-uppercase"
+                  href="/saison23"
+                  onClick={() => {
+                    toggleMenu();
+                    toggleSmMenu();
+                  }}
+                >
+                  saison 2023
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="dropdown-item fw-700 hover nav-link text-uppercase"
+                  href="/saison24"
+                  onClick={() => {
+                    toggleMenu();
+                    toggleSmMenu();
+                  }}
+                >
+                  saison 2024
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li className="nav-item">
+            <Link
+              className={
+                router.pathname === "/sponsors"
+                  ? "active fw-700 nav-link text-uppercase"
+                  : "nav-link fw-700 op-50 text-uppercase"
+              }
+              href="/sponsors"
+            >
+              sponsors
+            </Link>
+          </li>
+        </ul>
         <button
           className="border-0 p-3 bg-noir text-light fw-800 manrope d-xs-none d-md-block"
           onClick={toggleContact}

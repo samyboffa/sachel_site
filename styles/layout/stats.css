@@ -1,7 +1,13 @@
-.marginB-200{
-    margin-bottom: 200px;
-}
+
 .stat_txt{
     font-family: 'Manrope',sans-serif;
     font-weight: 500;
+    color: rgba(1, 6, 50, 1);
+    opacity: 70%;
+
+}
+@media (max-width:992px ) {
+    .marginB-200{
+    margin-bottom: 50px;
+    }
 }

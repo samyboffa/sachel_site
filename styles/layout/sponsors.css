@@ -1,12 +1,42 @@
 .sponsor_container{
     position: relative;
+    height: 950px;
+    margin-bottom: 200px;
 }
-
+.marginB-200{
+    margin-bottom: 200px;
+    border: 1px solid red;
+}
+.banner-t{
+    bottom: 0;
+    height: 46px;
+}
+.sponsor-majeur-title{
+    font-size: 32px ;
+}
+.image{
+    text-align: right; 
+}
+.img-sponsor{
+    object-fit: cover;
+    object-position: right bottom;
+}
+.text_sponsor{
+    padding-top: 115px;
+    position: absolute;
+    padding-left: 8%;
+}
+.sponsor_text_title{
+    margin-top: 115px;
+    font-size: 56px;
+}
 .sponsor_hero_img_container{
-    background: url('../../public/hero_bcg.png');
+    background: url('../../public/Mask.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain; 
+ 
+
 }
 .sponsor_webpage a{
     text-decoration: none;
@@ -69,8 +99,21 @@
     .sponsor_hero_img_container{
         background: url('../../public/fond_hero_sm.png');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center ;
         background-size: cover;   
+    }
+    .text_sponsor{
+    padding-top: 115px;
+    position: static;
+    padding-left: 8%;
+}
+    .sponsor-majeur-title{
+    font-size:24px ;
+}
+    .text_sponsor{
+        padding: 56px 23px;
+        margin-top: 0;
+        position: static;
     }
     .sponsor_hero{
         display: none;
@@ -81,9 +124,17 @@
     .sponsor-hero-title{
         font-size: 32px;
     }
+    .marginB-200{
+    margin-bottom: 50px;
+}
 }
 @media (max-width:450px){
     .sponsor-majeur-title{
         font-size: 24px;
+    }
+}
+@media (max-width:1250px){
+    .sponsor_text_title{
+        font-size: 32px;
     }
 }

@@ -14,4 +14,7 @@
 .heart{
     color: red;
 }
-
+.links{
+    text-decoration: none;
+    color: white;
+}

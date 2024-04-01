@@ -3,21 +3,21 @@ import CustomButton from "./CustomButton";
 import CheveronTxt from "./cheveronTxt";
 import { useRouter } from "next/router";
 
-const BluePageSeparator = ({ title, text, imgUrl, btn, Array }) => {
+const BluePageSeparator = ({ title, text, imgUrl, btn, Array, link }) => {
   const router = useRouter();
   return (
-    <div className="blueSeparator container-fluid ">
-      <div className="row d-flex">
-        <div className="data col-md-6 col-sm-12 p-md-5 p-xs-4 text-light ">
-          <h5 className="termina600 f32 text-uppercase mb-md-5 mb-sm-4">
+    <div className="blueSeparator position-relative container-fluid ">
+      <div className="row d-flex paddingX100">
+        <div className="data col-md-6 col-xs-12 p-0 text-light ">
+          <h5 className="termina600 f32 text text-grey text-uppercase mb-md-5 mb-sm-4">
             {title}
           </h5>
-          <p className="data_text lh32 f16 fw-500 mb-2">{text} </p>
+          <p className="data_text lh32 text-grey f16 fw-500">{text} </p>
           {btn ? (
             <CustomButton
               style="bg-yellow text-center"
               text="EN SAVOIR PLUS"
-              link="#"
+              link={link}
             />
           ) : (
             ""
@@ -40,12 +40,8 @@ const BluePageSeparator = ({ title, text, imgUrl, btn, Array }) => {
             </p>
           </div>
         </div>
-        <div className="col-md-6 col-sm-12 d-flex jcc align-items-center">
-          <img
-            src={imgUrl}
-            alt="sep_img"
-            className="img-fluid separator_img   "
-          />
+        <div className="col-md-5 col-xs-12 image-div">
+          <img src={imgUrl} alt="sep_img" className="img-fluid" />
         </div>
       </div>
     </div>
