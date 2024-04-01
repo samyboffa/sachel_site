@@ -1,6 +1,4 @@
-.marginB-200{
-    margin-bottom: 100px;
-}
+
 .stat_txt{
     font-family: 'Manrope',sans-serif;
     font-weight: 500;
@@ -9,8 +7,7 @@
 
 }
 @media (max-width:992px ) {
-
     .marginB-200{
     margin-bottom: 50px;
-}
+    }
 }

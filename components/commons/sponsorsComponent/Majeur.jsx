@@ -24,7 +24,7 @@ const Majeur = () => {
           <span>
             <img src="./helmet.png" alt="hemlet" className="helmet" />
           </span>
-          <p className=" text-noir text-uppercase termina600  f32 lh-sm sponsor-majeur-title   ">
+          <p className=" text-noir text-uppercase termina600 lh-sm sponsor-majeur-title   ">
             Sponsor majeur
           </p>
         </div>

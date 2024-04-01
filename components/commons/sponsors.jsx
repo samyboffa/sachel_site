@@ -23,7 +23,7 @@ const Sponsors = ({ data, width }) => {
               <img
                 src={sponsors.imgUrl}
                 alt={sponsors.title}
-                className="w-100 mb-5"
+                className="w-100 mb-5 img-fluid"
               />
               {data ? (
                 <div className="sonpsor_details manrope">

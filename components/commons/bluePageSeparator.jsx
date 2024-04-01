@@ -6,13 +6,13 @@ import { useRouter } from "next/router";
 const BluePageSeparator = ({ title, text, imgUrl, btn, Array, link }) => {
   const router = useRouter();
   return (
-    <div className="blueSeparator pos-relative container-fluid ">
+    <div className="blueSeparator position-relative container-fluid ">
       <div className="row d-flex paddingX100">
-        <div className="data col-md-6 col-sm-12 p-0 text-light ">
+        <div className="data col-md-6 col-xs-12 p-0 text-light ">
           <h5 className="termina600 f32 text text-grey text-uppercase mb-md-5 mb-sm-4">
             {title}
           </h5>
-          <p className="data_text lh32 text-grey f16 fw-500 mb-2">{text} </p>
+          <p className="data_text lh32 text-grey f16 fw-500">{text} </p>
           {btn ? (
             <CustomButton
               style="bg-yellow text-center"
@@ -40,8 +40,8 @@ const BluePageSeparator = ({ title, text, imgUrl, btn, Array, link }) => {
             </p>
           </div>
         </div>
-        <div className="col-md-5 col-sm-12 image-div d-flex justify-content-start">
-          <img src={imgUrl} alt="sep_img" className="img-fluid  " />
+        <div className="col-md-5 col-xs-12 image-div">
+          <img src={imgUrl} alt="sep_img" className="img-fluid" />
         </div>
       </div>
     </div>

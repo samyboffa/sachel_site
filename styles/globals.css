@@ -99,6 +99,9 @@ body{
 .f56{
   font-size: 56px;
 }
+.fw-400{
+  font-weight: 400;
+}
 .fw-500{
   font-weight: 500;
 }
@@ -182,4 +185,10 @@ h1{
 @import url(./layout/sponsors.css);
 @import url(./layout/contact.css);
 @import url(./Termina.css);
+@import url(./layout/popup.css);
 
+@media (max-width:992px ) {
+    .f56{
+    font-size: 32px;
+    }
+}

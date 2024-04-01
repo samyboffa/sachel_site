@@ -10,12 +10,13 @@
     gap: 100px;
 }
 .paddingX100{
-    padding: 70px 100px;
+    padding: 40px 100px;
 }
 .image-div{
     position: absolute;
-    right: 2%;
-    top: -17%;
+    right: 1%;
+    top: -30%;
+    
 }
 
 .data_text{
@@ -43,5 +44,9 @@
 }
     .image-div{
         position:static;
+        
     }
+    .paddingX100{
+    padding: 64px 23px 50px 23px ; 
+}
 }

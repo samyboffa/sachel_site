@@ -43,11 +43,11 @@ const index = () => {
         />
       </div>
       <div className="text-center my-5 ">
-        <p className="rock-salt f20 fw-medium w-25 mx-auto">
+        <p className="rock-salt f20 col-xs-9 col-md-2 fw-400  mx-auto">
           “La course, c'est la vie. Tout le reste, avant ou après, n'est que de
           l'attente. ”
         </p>
-        <p className="smooch f40 fw-semibold ">Steve McQueen</p>
+        <p className="smooch f40 fw-400 ">Steve McQueen</p>
       </div>
     </div>
   );

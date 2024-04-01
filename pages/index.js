@@ -3,11 +3,13 @@ import InfoSection from "@/components/commons/infoSection";
 import Stats from "@/components/commons/stats";
 import Hero from "@/components/homeComponents/hero";
 import Sponsors from "@/components/commons/sponsors";
+import PopUp from "@/components/homeComponents/PopUp";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <PopUp />
       <InfoSection
         imgUrl="./IMAGE_SACHEL.png"
         title="En route vers une carrière de pilote professionnel"

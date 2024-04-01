@@ -10,8 +10,11 @@
     left: 0;
     width: 100%;
 }
-
-.test{
+.nav-list{
+    width: 500px;
+    background-color: red;
+}
+.black_transparent_background{
     position: absolute;
     background-color:rgb(0,0,0,0.5);
     width: 100vw;
@@ -86,11 +89,11 @@
         background-color: white;
     }
     .menu{
-    display: block;
+        display: block;
     
     }
     .drop-menu{
-    box-shadow: none;
-    border-radius: 0;
-}
+        box-shadow: none;
+        border-radius: 0;
+    }
 }

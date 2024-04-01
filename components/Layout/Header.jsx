@@ -17,18 +17,20 @@ const Header = () => {
   const { contact, toggleContact } = useContext(ContactContext);
 
   return (
-    <nav className="navbar  navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div
-        className={showDrop ? "test d-block" : "d-none"}
+        className={showDrop ? "black_transparent_background d-block" : "d-none"}
         onClick={() => setShowDrop(false)}
       ></div>
-      <div className="d-flex container p-md-0   w-100 justify-content-between">
-        <Link
-          className="navbar-brand f24 termina700 text-uppercase text-noir"
-          href="/"
-        >
-          Sachel Rotge
-        </Link>
+      <div className=" container">
+        <div className="nav-title">
+          <Link
+            className="navbar-brand f24 termina700 text-uppercase text-noir"
+            href="/"
+          >
+            Sachel Rotge
+          </Link>
+        </div>
         <ul
           className={
             showMenu
@@ -132,7 +134,6 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-
         <button
           className="border-0 p-3 bg-noir text-light fw-800 manrope d-xs-none d-md-block"
           onClick={toggleContact}
