@@ -9,10 +9,15 @@ const Endurance = () => {
           La team endurance
         </h2>
       </div>
-      <div className="d-flex jcc">
-        <RacerCard imgUrl='./romain.png' name="Romain Iannetta" role="Pilote"/>
+      <div className="row d-flex jcc">
+        <div className="col-md-4 mt-5">
+          <RacerCard
+            imgUrl="./romain.png"
+            name="Romain Iannetta"
+            role="Pilote"
+          />
+        </div>
       </div>
-      
     </div>
   );
 };

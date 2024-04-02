@@ -3,7 +3,7 @@ import React from "react";
 const EquipeHome = () => {
   return (
     <div className="container-fluid equipe_hero marginB-200">
-      <h1 className="text-uppercase termina700 text-md-center text-sm-left my-5 fw-700 equipe_title lh-sm-base">
+      <h1 className="text-uppercase text-noir termina700 text-md-center text-sm-left my-5 pt-5 fw-700 equipe_title lh-sm-base">
         L'équipe de Sachel Rotge
       </h1>
       <div className="row  ">
@@ -11,7 +11,7 @@ const EquipeHome = () => {
           <img src="./kart.png" alt="karting" className="w-100" />
         </div>
         <div className="col-md-6 col-sm-12">
-          <h2 className="info_section_title my-xs-4 termina600  text-uppercase ">
+          <h2 className="info_section_title my-xs-4 termina600 text-noir text-uppercase ">
             Sachel Rotge -
             <br />
             <span className="info_section_title my-xs-4 text-yellow  termina600">
@@ -19,7 +19,7 @@ const EquipeHome = () => {
             </span>
           </h2>
           <div className="equipe_hero_text">
-            <p className="my-5 fw-500 lh32 f16 manrope">
+            <p className="my-3 fw-500 lh32 f16 manrope">
               J’ai 17 ans et je suis depuis toujours passionné de sport
               automobile. Depuis plus de trois ans, j’ai la chance d'évoluer
               dans ce sport, d’abord en compétition karting, puis en automobile

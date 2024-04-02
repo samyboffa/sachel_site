@@ -16,7 +16,7 @@ const InfoSection = ({
       <section
         className={
           reverse
-            ? "row d-flex  justify-content-between marginB-200 mx-xs-auto p-xs-3 flex-md-row-reverse   "
+            ? "row d-flex justify-content-between marginB-200 mx-xs-auto p-xs-3 flex-md-row-reverse   "
             : "row d-flex  justify-content-between p-xs-3 mx-xs-auto marginB-200"
         }
       >
@@ -29,7 +29,7 @@ const InfoSection = ({
           >
             {title}
           </p>
-          <p className="marope f16 lh32 fw-500 text-noir mb-3  ">{txt}</p>
+          <p className="manrope f16 lh32 fw-500 text-noir mb-3">{txt}</p>
           <div className={Array ? "mb-3" : "d-none"}>
             {Array?.map((item, idx) => {
               return <CheveronTxt item={item} key={idx} />;

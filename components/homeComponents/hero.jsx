@@ -5,15 +5,15 @@ const Hero = () => {
     <div className="container-fluid p-0 marginB-200 hero_container">
       <div className="side_btns">
         <button className="sideBtn ">
-          <img src="./vector.png" alt="side" />
+          <img src="./Vector.png" alt="side" />
           <p>PRENDRE CONTACT</p>
         </button>
         <button className="sideBtn ">
-          <img src="./vector_2.png" alt="side" />
+          <img src="./Vector_2.png" alt="side" />
           <p>DEVENIR SPONSOR</p>
         </button>
         <button className="sideBtn">
-          <img src="./vector_3.png" alt="side" /> <p>DEVENIR SPONSOR</p>
+          <img src="./Vector_3.png" alt="side" /> <p>DEVENIR SPONSOR</p>
         </button>
       </div>
       <div className="row d-flex  ">

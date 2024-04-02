@@ -18,7 +18,7 @@ const BluePageSeparator = ({
     <div className="blueSeparator position-relative container-fluid ">
       <div className="row d-flex paddingX100">
         <div className="data col-md-6 col-xs-12 p-0 text-light">
-          <h5 className="termina600 f32 text text-grey text-uppercase mb-md-5 mb-sm-4">
+          <h5 className="termina600 f32 text text-grey text-uppercase mb-md-4 mb-sm-4">
             {title}
           </h5>
           <p className="data_text lh32 text-grey f16 fw-500">{text} </p>

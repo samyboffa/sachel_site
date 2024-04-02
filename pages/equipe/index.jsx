@@ -26,7 +26,7 @@ const index = () => {
         Array={[
           "Participation à la Rok Cup Italia « Junior Rok » 2021",
           "Participation à la Rok Cup Italia « Super Rok » 2022 9ème place à la finale mondiale 2022",
-          "Participation à la Rok Cup Italia « Super Rok » 2022 9ème place à la finale mondiale 2022",
+          "Participation à la Rok Cup Italia « Senior Rok » 2023  1ère place / vainqueur catégorie aux 4h00 de Brignoles SWS",
         ]}
       />
       <KartTeam />
