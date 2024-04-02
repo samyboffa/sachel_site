@@ -15,14 +15,14 @@ const index = () => {
       <Sponsors data={true} width="col-md-6" />
       <Partenariat />
       <InfoSection
-        imgUrl="./partenariat_section_4.png"
+        imgUrl="./partenariat_section_4.svg"
         txt="Le Parrainage sportif (ou sponsoring sportif) consiste à apporter un soutien, notamment matériel et financier, à un sportif en vue de sa participation à une compétition et aux fins de développement de sa carrière. Le « Parrain » reçoit une contrepartie directe, principalement en terme de publicité, son nom et sa marque étant associés aux compétitions et activités du sportif parrainé (communication sur les réseaux sociaux, logotisation, présence sur les évènements…). L’image de marque du Parrain est valorisée."
         title="INVESTISSEZ DANS L’AVENIR D’UN JEUNE SPORTIF"
         btnTxt="VOIR MA PLAQUETTE DE PRésentation"
         reverse={true}
       />
       <InfoSection
-        imgUrl="./partenariat_section_5.png"
+        imgUrl="./partenariat_section_5.svg"
         txt="Investissez sur l’avenir  et la valeur « sport » en devenant partenaire de mes saisons de compétitions. Le parrainage sportif va au-delà de la visibilité : c’est une collaboration dans le cadre de laquelle votre entreprise s'associe à la croissance, à l'ambition et à l'énergie de la jeunesse. Ensemble, bâtissons un avenir gagnant."
         title="EN DEVENANT MON PARTENAIRE ET SPONSOR"
         reverse={false}

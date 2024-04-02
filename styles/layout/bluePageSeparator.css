@@ -10,12 +10,12 @@
     gap: 100px;
 }
 .paddingX100{
-    padding: 40px 100px;
+    padding: 80px 100px;
 }
 .image-div{
     position: absolute;
-    right: 1%;
-    top: -30%;
+   /*  right: 1%;
+    top: -30%; */
     
 }
 
