@@ -133,9 +133,19 @@ const Header = () => {
               sponsors
             </Link>
           </li>
+          <li className="nav-item d-flex justify-content-center d-xl-none">
+            <button
+              className="active fw-700 nav-link text-uppercase op-50"
+              onClick={() => {
+                toggleContact(), toggleSmMenu();
+              }}
+            >
+              Contact
+            </button>
+          </li>
         </ul>
         <button
-          className="border-0 p-3 bg-noir text-light fw-800 manrope d-xs-none d-md-block"
+          className="border-0 p-3 bg-noir text-light fw-800 manrope d-xs-none d-lg-block"
           onClick={toggleContact}
         >
           CONTACT
