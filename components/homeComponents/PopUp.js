@@ -23,7 +23,7 @@ const PopUp = () => {
           En savoir plus
         </button>
         <button
-          className="popUpCloseBtn"
+          className="popUpCloseBtn "
           onClick={() => setPopUpVisible(false)}
         >
           <p>X</p>

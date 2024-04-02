@@ -19,8 +19,8 @@ const Caroussel = ({ items }) => {
 
   return (
     <div className="carousel p-xs-1 p-md-5">
-      <h6 className="text-uppercase f14 termina600  text-center text-yellow my-3">
-        temoignages
+      <h6 className="text-uppercase f14 termina600 text-center text-yellow my-3">
+        témoignages
       </h6>
       <div className="carousel-inner p-xs-1 p-md-5">
         {items.map((item, index) => (
@@ -47,15 +47,21 @@ const Caroussel = ({ items }) => {
       <a className="carousel-control-next cursor-pointer" onClick={goToNext}>
         &#10095;
       </a>
-      <div className="carousel-indicators">
+      <div className="carousel-indicators gap-2">
         {items.map((_, index) => (
-          <button
-            key={index}
-            className={`indicator  ${
-              index === currentIndex ? "activeindicator" : ""
+          <div
+            className={`button-border ${
+              index === currentIndex ? "border_yellow opacity-1" : ""
             }`}
-            onClick={() => goToSlide(index)}
-          />
+            key={index}
+          >
+            <button
+              className={`indicator  ${
+                index === currentIndex ? "activeindicator " : ""
+              }`}
+              onClick={() => goToSlide(index)}
+            />
+          </div>
         ))}
       </div>
     </div>

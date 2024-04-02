@@ -1,0 +1,27 @@
+.indicator{
+    color: rgba(255, 255, 255, 1) ;
+    border: none;
+    height: 7px;
+    width: 7px;
+   
+}
+.activeindicator{
+    background: rgba(223, 222, 16, 1);
+    border: none;
+}
+.button-border{
+    border: 2px solid rgba(255, 255, 255, 1) ;
+    padding: 1px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+.border_yellow{
+    border-color:rgba(223, 222, 16, 1) ;
+}
+.opacity-1{
+    opacity: 1;
+}

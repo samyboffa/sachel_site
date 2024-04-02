@@ -3,14 +3,14 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position:  center;
-    margin: 230px 0;
+    margin: 200px 0;
 
 }
 .gap-100{
     gap: 100px;
 }
 .paddingX100{
-    padding: 80px 100px;
+    padding: 40px 100px;
 }
 .image-div{
     position: absolute;
